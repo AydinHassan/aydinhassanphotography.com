@@ -1,0 +1,57 @@
+<script>
+import images from  '../images.json';
+import Gallery from "./Gallery.vue";
+import Back from "./icons/Back.vue";
+
+export default {
+    name:  'Albums',
+    components: {
+        Back,
+        Gallery
+    },
+    data() {
+        return {
+            albums: images.albums,
+            images: images.images
+        }
+    },
+    computed: {
+        album() {
+            return this.albums[this.$route.params.id]
+        },
+        albumImages() {
+            return images.images.filter(image => image.albums !== undefined && image.albums.includes(this.$route.params.id));
+        },
+    },
+}
+</script>
+
+<template>
+    <div  class="bg-stone-900 w-full flex-1">
+        <div class="container lg:w-3/4 mx-auto flex flex-col mt-6 mb-10">
+            <div class="flex items-center">
+                <div class="ml-2 md:ml-0 text-lg md:text-xl text-white font-bungee-hairline float-left hover:text-orange-300 hover:-translate-x-1 transition duration-300 jus">
+                    <router-link to="/albums" class="flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+                        </svg>
+                        <span>Back</span>
+                    </router-link>
+                </div>
+                <h1 class="text-white text-center text-3xl md:text-4xl p-4 font-bungee-hairline font-bold">{{album.title}}</h1>
+            </div>
+            <p v-if="album.description" class="mx-4 text-white font-bungee-hairline" >{{album.description}}</p>
+        </div>
+        <Gallery :images="albumImages">
+            <template v-slot:title>
+            </template>
+        </Gallery>
+        <div class="container lg:w-3/4 mx-auto flex flex-col mt-6 mb-10">
+            <div class="flex items-center">
+                <div class="ml-2 md:ml-0 text-lg md:text-xl text-white font-bungee-hairline float-left hover:text-orange-300 hover:-translate-x-1 transition duration-300 jus">
+                    <router-link to="/albums" class="flex"><back class="w-6 h-6 mr-2"/><span>Back</span></router-link>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
