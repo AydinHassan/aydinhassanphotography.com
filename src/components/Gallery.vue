@@ -3,6 +3,7 @@
 import Info from "./icons/Info.vue";
 import Camera from "./icons/Camera.vue";
 import Date from "./icons/Date.vue";
+import debounce from "../utils/debounce.js";
 
 const scrollElementIntoView = (element) => {
     if (element) {
@@ -241,16 +242,18 @@ export default {
             }, 3000);
         },
         showTitleNow() {
-            if (this.showInfo) {
-                //we are already open, and therefore don't want to close after 2 seconds
-                return;
-            }
+            debounce(() => {
+                if (this.showInfo) {
+                    //we are already open, and therefore don't want to close after 2 seconds
+                    return;
+                }
 
-            this.cancelHideTitleTimer();
+                this.cancelHideTitleTimer();
 
-            this.showTitle = true;
+                this.showTitle = true;
 
-            this.createHideTitleTimer();
+                this.createHideTitleTimer();
+            }, 200)();
         },
         cancelHideTitleTimer() {
             if (this.showTitleTimer) {
