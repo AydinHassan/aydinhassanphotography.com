@@ -238,7 +238,7 @@ export default {
         createHideTitleTimer() {
             this.showTitleTimer = setTimeout(() => {
                 this.showTitle = false;
-            }, 2000);
+            }, 3000);
         },
         showTitleNow() {
             if (this.showInfo) {
@@ -312,12 +312,12 @@ export default {
                              style="aspect-ratio: var(--ratio)"
                         />
 
-                        <Transition enter-active-class="transition-opacity  duration-300 ease-in"
+                        <Transition enter-active-class="transition-opacity duration-300 ease-in"
                                     leave-active-class="transition-opacity duration-300 ease-in" enter-from-class="opacity-0"
                                     enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
-                            <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 text-white font-bungee-hairline text-lg fixed absolute justify-between" :style="imgInfoStyles">
+                            <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
                                 <div class="flex-1 flex flex-col">
-                                    <h2 v-if="showTitle && selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
+                                    <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
                                     <p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base">{{selectedImage.description}}</p>
                                 </div>
 
