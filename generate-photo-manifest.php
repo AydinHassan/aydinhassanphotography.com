@@ -12,6 +12,15 @@ foreach ($json['images'] as $key => $image) {
 
     [$width, $height] = getimagesize($file->getPathname());
 
+
+    if ($image['description'] !== "" && !str_ends_with($image['description'], '.')) {
+        $json['images'][$key]['description'] = $image['description'] . '.';
+    }
+
+    if (str_ends_with($image['title'], '.')) {
+        $json['images'][$key]['title'] = substr($image['title'], 0, -1);
+    }
+
     $json['images'][$key]['ratio'] = getRatio($file);
     $json['images'][$key]['orientation'] = $width > $height ? 'landscape' : 'portrait';
     $json['images'][$key]['exif'] = exif($file);
