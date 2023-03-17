@@ -44,7 +44,7 @@
             "name": "tree-lined-road-fog-carinthia",
             "title": "Tree lined road smothered in fog, Carinthia, Austria",
             "description": "",
-            "ratio": "1567 \/ 2350",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -64,7 +64,7 @@
             "name": "pastel-sunrise-fog-church-karawanken",
             "title": "Tainach church, Karawanken, Austria",
             "description": "Church of Tainach near V\u00f6lkermart at sunrise with thick fog covering the river Drau, Carinthia, Austria.",
-            "ratio": "16 \/ 9",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -110,7 +110,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "churches"
+                "churches",
+                "architecture"
             ],
             "exif": {
                 "Aperture": "f\/7.1",
@@ -126,7 +127,7 @@
             "name": "above-johnsbach-sun-fog",
             "title": "Mountain ridge trail, Johnsbach",
             "description": "Winding trail through foggy forests during autumn on a mountain ridge above Johnsbach, Ges\u00e4use National Park, Styria, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -166,7 +167,7 @@
             "name": "first-snow-vienna",
             "title": "The first snow, Leopoldsberg, Vienna, Austria",
             "description": "",
-            "ratio": "1529 \/ 2293",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -187,7 +188,7 @@
             "name": "fog-waterfall-ennstaler-hutte",
             "title": "A waterfall of fog, Ennstalerh\u00fctte, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -207,7 +208,7 @@
             "name": "aegean-coast-turkey",
             "title": "Turkish Aegean coast",
             "description": "A tiny secluded beach with turquoise waters illuminated by the early morning sun, Aegean ocean, Fethiye, Turkey.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -224,7 +225,7 @@
             "name": "sheep-lienzer-dolomites",
             "title": "Peekaboo Sheep",
             "description": "A sheep peeking above the grass in candid shot with pointy mountain peaks in the background, Lienz dolomites, Austria.",
-            "ratio": "1095 \/ 1642",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -241,7 +242,7 @@
             "name": "red-valley-arch-sunset",
             "title": "Sunset over Cappadocia from Rose Valley, Turkey",
             "description": "Burning orange sunset over Rose and Red valley along a hiking trail, Cappadocia, Turkey.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -258,7 +259,7 @@
             "name": "lake-tuz-mirror-sunset",
             "title": "Tuz G\u00f6l\u00fc (Lake Tuz), Turkey",
             "description": "A Ginormous salt lake reflecting like a mirror in Turkey at sunset.",
-            "ratio": "2356 \/ 1571",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -275,7 +276,7 @@
             "name": "uchisar-sunrise",
             "title": "U\u00e7hisar in early morning light, Cappadocia, Turkey",
             "description": "A perfect fairytale like moment, caught on the way home, unexpectedly from the side of the road.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -296,7 +297,7 @@
             "name": "patara-sunset",
             "title": "Burning sunset over the mountains of Patara beach, Turkey",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -316,7 +317,7 @@
             "name": "red-valley-sunset",
             "title": "Sunset in U\u00e7hisar, Cappadocia, Turkey",
             "description": "Golden light over natural rock weathered fairy chimneys and living quarters.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -333,7 +334,7 @@
             "name": "neusiedlersee-sunset",
             "title": "Neusiedlersee, Burgenland, Austria",
             "description": "Magical soothing pastel sunset at lake Neusiedlersee.",
-            "ratio": "1551 \/ 2326",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -350,7 +351,7 @@
             "name": "colle-di-val-delsa",
             "title": "Colle di Val d'Elsa",
             "description": "Romantic twisting side street in Colle di Val d'Elsa, Tuscany, Italy during blue hour.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -370,7 +371,7 @@
             "name": "rainy-forest",
             "title": "Spring rain in the forests of Carinthia, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -390,7 +391,7 @@
             "name": "san-gimignano-sunset",
             "title": "San Simignano, Tuscany, Italy",
             "description": "The famous medieval town of San Gimignano drenched in golden light.",
-            "ratio": "2341 \/ 1561",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -410,7 +411,7 @@
             "name": "stein-window",
             "title": "Stein, Krems, Austria",
             "description": "Medieval old town of Stein, Krems through an apartment window.",
-            "ratio": "763 \/ 1144",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -430,7 +431,7 @@
             "name": "dachstein-above-fog",
             "title": "Dachstein above the fog, Austria",
             "description": "Dachstein mountain range standing tall through the thick summer fog just before sunrise, Schladming, Styria, Austria.",
-            "ratio": "2307 \/ 1298",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -467,7 +468,7 @@
             "name": "tatschnigteich-fog-trees-snow",
             "title": "A trail through the lonely trees, Carinthia, Austria",
             "description": "A trail trough two bare lonely trees with thick fog and snow covered landscape in an eerie scene near Waggendorf.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -505,7 +506,7 @@
             "name": "znojmo",
             "title": "Znojmo, Czechia",
             "description": "Deep blue and purple sunset over the beautiful medieval town of Znojmo, Czechia.",
-            "ratio": "523 \/ 784",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -525,7 +526,7 @@
             "name": "zell-pfarre-winter-pastel-sunset",
             "title": "Winter in the Karawanken mountains, Austria",
             "description": "Magical winter sunset framed with snowy trees on a hiking trail near Zell-pfarre, Carinthia, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -545,7 +546,7 @@
             "name": "foggy-bled",
             "title": "Lake Bled, Slovenia",
             "description": "Moody winter morning at the lake.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -567,7 +568,7 @@
             "name": "schneeberg-sunset",
             "title": "Schneeberg and the Austrian Alps",
             "description": "An extremely windy sunset from Schneeberg over the Austrian Alps.",
-            "ratio": "2375 \/ 1584",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -604,7 +605,7 @@
             "name": "sunrise-schneeberg",
             "title": "A magical sunrise from Lower Austria's highest peak, Schneeberg",
             "description": "",
-            "ratio": "793 \/ 529",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -621,7 +622,7 @@
             "name": "zell-pfarre-winter-cabin-fog",
             "title": "Wooden cabin, Zell-pfarre, Carinthia, Austria",
             "description": "In untouched snow and thick fog creating the illusion of a CGI scene.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -642,7 +643,7 @@
             "name": "mondsee-sunrise-3",
             "title": "Mondsee, Salzkammergut, Austria",
             "description": "Autumnal sunrise over the mountains and peaks of Salzkammergut with a sea of fog sweeping through the valley.",
-            "ratio": "787 \/ 525",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -663,7 +664,7 @@
             "name": "sorg-pastel-fog-sunrise",
             "title": "S\u00f6rg, Carinthia, Austria",
             "description": "Beautiful alpine village of S\u00f6rg at sunrise, surrounded by thick fog catching the early warm light, Carinthia, Austria.",
-            "ratio": "1750 \/ 1167",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -684,7 +685,7 @@
             "name": "hochrindl-winter-sunrise",
             "title": "Winter sunrise at Hochrindl, Carinthia, Austria",
             "description": "Sunrise over the Karawanken mountains from Hochrindl with beautiful snow patterns carved from the wind.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -704,7 +705,7 @@
             "name": "volkermarkter-stausee",
             "title": "Volkermarkt dam, Carinthia, Austria",
             "description": "Volkermarkt dam at sunrise, perfectly still waters reflecting the snow capped Karawanken mountains.",
-            "ratio": "2317 \/ 1303",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -721,7 +722,7 @@
             "name": "dobratch-fog-cabin",
             "title": "Thick fog in Dobratsch Nature Park, Carinthia, Austria",
             "description": "Creepy cabin in thick fog during a whiteout at blue hour in Dobratsch Nature Park near Villach.",
-            "ratio": "742 \/ 495",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -742,7 +743,7 @@
             "name": "llandudno-sunset",
             "title": "LLandudno sunset, UK",
             "description": "Warm sunset with glowing rocks and landscape over Llandudno from the Little Orme after a stormy day in Wales.",
-            "ratio": "1577 \/ 2364",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -759,7 +760,7 @@
             "name": "lake-salda-sunrise-landscape",
             "title": "Lake Salda, Turkey",
             "description": "Sunrise at lake Salda - known as the Turkish Maldives. Turquoise water with black and white sands.",
-            "ratio": "1781 \/ 1187",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -776,7 +777,7 @@
             "name": "dobratsch-snow",
             "title": "Windswept snowy landscape, Dobratsch, Austria",
             "description": "Golden afternoon light over the magical winter landscape of Dobratsch Nature Park, Villach, Carinthia, Austria.",
-            "ratio": "1180 \/ 787",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -813,7 +814,7 @@
             "name": "magdalensberg-troadkasten-snow-sunrise",
             "title": "Magdalensberg winter, Carinthia, Austria",
             "description": "Magical winter sunrise over Magdalensberg with perfect untouched snow and thick fog covering Lower Carinthia with Karawanken mountains in the background, Austria.",
-            "ratio": "2346 \/ 1565",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -910,7 +911,7 @@
             "name": "pink-sunset-bad-kleinkirchheim",
             "title": "Magical pink sunset, Carinthia, Austria",
             "description": "Magnificent pink and purple sunset in the snowy landscape of Bad Kleinkirchheim.",
-            "ratio": "1588 \/ 2381",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -950,7 +951,7 @@
             "name": "dobratsch-abstract",
             "title": "Abstract patterns, Dobratsch, Austria",
             "description": "Golden afternoon light and thick fog at Dobratsch Nature Park with beautiful snow and ice patterns from the harsh cold wind, Villach, Carinthia, Austria.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -991,7 +992,7 @@
             "name": "uchisar-wild-flowers",
             "title": "Wild flowers at U\u00e7hisar, Cappadocia, Turkey",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1011,7 +1012,7 @@
             "name": "admonthaur-foggy-sunrise",
             "title": "Foggy sunrise from Admonthaus, Austria",
             "description": "The sun breaks through for a short minute as the thick fog engulfs the mountains around Admont, Styria, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1031,7 +1032,7 @@
             "name": "aegean-coast-turkey-sunset",
             "title": "Summer sunset over the Aegean coast, Turkey",
             "description": "Sparsely populated rugged mountainous terrain of the the Aegean coast.",
-            "ratio": "1189 \/ 793",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1065,7 +1066,7 @@
             "name": "castle-hardegg-sunset",
             "title": "Castle Hardegg, Austria",
             "description": "Vibrant sunset over the castle and village of Hardegg, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1085,7 +1086,7 @@
             "name": "dobratsch-winter-sunset",
             "title": "Winter sunset, Dobratsch, Austria",
             "description": "A frozen landscape covered in fresh snow with warm golden light, Dobratsch Nature Park, Austria.",
-            "ratio": "1730 \/ 1153",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1122,7 +1123,7 @@
             "name": "diex-karwanken-storm",
             "title": "Storms raging in the Karawanken, Austria",
             "description": "A storm engulfs the snowy mountains of the Karawanken, witnessed from the alpine village of Diex, Carinthia, Austria.",
-            "ratio": "2374 \/ 1583",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1142,7 +1143,7 @@
             "name": "issyk-kul-sunset",
             "title": "The last light over lake Issyk-Kul, Kyrgyzstan",
             "description": "Long after the sun had set, the light still burned through the tiny gap in the clouds over the lake.",
-            "ratio": "1799 \/ 1199",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1182,7 +1183,7 @@
             "name": "karawanken-pink-winter-sunrise",
             "title": "Pastel sunrise over mount Triglav, Carinthia, Austria",
             "description": "The highest peak in Slovenia, as withnessed from Magdalensberg on a magical winter morning.",
-            "ratio": "2230 \/ 1487",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1239,7 +1240,7 @@
             "name": "lake-como-sunrise",
             "title": "Golden morning at lake Como, Italy",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1299,7 +1300,7 @@
             "name": "skazka-canyon-issyk-kul-sunset",
             "title": "Crazy landscapes from Kyrgyzstan",
             "description": "Mars like landscape from Skazka canyon on the shore of Issyk Kul lake, Kyrgyzstan.",
-            "ratio": "1751 \/ 1167",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1319,7 +1320,7 @@
             "name": "solcava-pano-farm",
             "title": "Sol\u010dava panoramic road, Slovenia",
             "description": "One of the oldest alpine farms in Slovenia from the Sol\u010dava panoramic road.",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1336,7 +1337,7 @@
             "name": "sorger-waterfall-frozen",
             "title": "Winter at S\u00f6rg waterfalll, Carinthia, Austria",
             "description": "Half frozen waterfall with bizarre ice formations.",
-            "ratio": "525 \/ 787",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -1376,7 +1377,7 @@
             "name": "sunrise-puchberg-schneeberg",
             "title": "Sunrise over Puchberg from Schneeberg, Austria",
             "description": "Wonderful golden autumnal light streaming over the small town of Puchberg.",
-            "ratio": "2305 \/ 1537",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1393,7 +1394,7 @@
             "name": "tashkent-metro-2",
             "title": "Kosmonavtlar metro station, Tashkent, Uzbekistan",
             "description": "Long exposure at the space themed metro station honoring Soviet cosmonauts.",
-            "ratio": "1781 \/ 1187",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1413,7 +1414,7 @@
             "name": "sunset-from-uchisar",
             "title": "Cappadocia Sunset, Turkey",
             "description": "Sunset over Cappadocia with its valleys, mountains and bizarre rock formations from Uchisar Castle.",
-            "ratio": "1120 \/ 747",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1430,7 +1431,7 @@
             "name": "traunsee-storm-sunset",
             "title": "Stormy sunset over Traunsee, Austria",
             "description": "Incredible golden light breaking through a gap in the clouds.",
-            "ratio": "2355 \/ 1571",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1450,7 +1451,7 @@
             "name": "triglav-np-fog-peak",
             "title": "Mountain peak, Triglav National Park, Slovenia",
             "description": "Mountains engulfed in clouds in Triglav National Park.",
-            "ratio": "364 \/ 241",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1470,7 +1471,7 @@
             "name": "turkey-island-sunset",
             "title": "Small island of the Turkish Aegean coast",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1487,7 +1488,7 @@
             "name": "velika-planina-afternoon-fog",
             "title": "Velika Planina, Slovenia",
             "description": "Ominous sun glowing above trees in the thick fog.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -1508,7 +1509,7 @@
             "name": "velika-planina-church-fog",
             "title": "Church, Velika Planina, Slovenia",
             "description": "A church surrounded with thick eerie fog in the Slovenian alps .",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1529,7 +1530,7 @@
             "name": "zell-pfarre-snow-patterns",
             "title": "Winter in Zell-pfarre, Austria",
             "description": "Bizarre ice patterns in a tiny stream, Zell-pfarre, Carinthia, Austria.",
-            "ratio": "772 \/ 1083",
+            "ratio": "2143 \/ 3000",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -1549,7 +1550,7 @@
             "name": "patara-beach-2",
             "title": "Patara beach sand dunes, Turkey",
             "description": "Warm light and abstract patterns in the sand dunes of Patara beach on a burning hot summers day.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1566,7 +1567,7 @@
             "name": "pastel-sunrise-fog-karawanken",
             "title": "Lonely church on a peak above a sea of clouds, Carinthia, Austria",
             "description": "One of the most grounding mornings I've ever experienced.",
-            "ratio": "1193 \/ 671",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1586,7 +1587,7 @@
             "name": "palmenhaus-spring",
             "title": "Palmenhaus, Vienna, Austria",
             "description": "Sunset and spring Tulips at one the most striking buildings in Vienna.",
-            "ratio": "239 \/ 358",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -1626,7 +1627,7 @@
             "name": "most-na-soci-afternoon",
             "title": "Afternoon light, Most na So\u010di, Slovenia",
             "description": "THe hills and mountains of the Julian Alps reflected in the So\u010da river smothered in golden light.",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1660,7 +1661,7 @@
             "name": "magdalensberg-troadkasten-snow-fog",
             "title": "Troadkasten, Magdalensberg, Austria",
             "description": "Fresh snow fall and thick fog on Magdalensberg.",
-            "ratio": "1159 \/ 773",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1681,7 +1682,7 @@
             "name": "lower-carinthia-fog",
             "title": "Sweeping fog, Lower Carinthia, Austria",
             "description": "Harsh winds blow low lying fog across the hills of Lower Carinthia.",
-            "ratio": "2319 \/ 1547",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1701,7 +1702,7 @@
             "name": "lagodekhi-np-marshes",
             "title": "Lagodekhi National Park, Georgia",
             "description": "Alpine marshes at almost 3000M in the Lagodekhi National Park.",
-            "ratio": "1760 \/ 1173",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1735,7 +1736,7 @@
             "name": "klippitztorl-sunrise",
             "title": "Klippitztorl winter sunrise, Carinthia, Austria",
             "description": "A dystopian sunrise scene during the height of the COVID-19 pandemic.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1789,7 +1790,7 @@
             "name": "foggy-forest-sunrise-above",
             "title": "Morning fog through the forest, Carinthia, Austria",
             "description": "",
-            "ratio": "736 \/ 491",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1829,7 +1830,7 @@
             "name": "diex",
             "title": "Diex, Carinthia, Austria",
             "description": "Sunny afternoon in early autumn.",
-            "ratio": "2287 \/ 1525",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1849,7 +1850,7 @@
             "name": "boka-waterfall",
             "title": "Boka Waterfall, Slovenia",
             "description": "",
-            "ratio": "308 \/ 465",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -1886,7 +1887,7 @@
             "name": "afternoon-light-village-romania",
             "title": "Afternoon light in Romania",
             "description": "Golden afternoon light over the rolling hills of Transylvania, Romania.",
-            "ratio": "1753 \/ 1169",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -1906,7 +1907,7 @@
             "name": "acik-saray-palace",
             "title": "A\u00e7\u0131k Saray palace, Cappadocia, Turkey",
             "description": "Magnificent A\u00e7\u0131k Saray palace, carved from weathered volcanic deposits.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -1963,7 +1964,7 @@
             "name": "attersee",
             "title": "Autumn at lake Atterssee, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -1980,7 +1981,7 @@
             "name": "creepy-foggy-trees-carinthia",
             "title": "Creepy trees in thick fog, Carinthia, Austria",
             "description": "",
-            "ratio": "2103 \/ 1183",
+            "ratio": "3000 \/ 1687",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2058,7 +2059,7 @@
             "name": "emen-canyon-bridge",
             "title": "Emen canyon, Bulgaria",
             "description": "Romantic wonky wooden bridge in Emen canyon.",
-            "ratio": "1759 \/ 1173",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2075,7 +2076,7 @@
             "name": "karawanken-foggy-sunset",
             "title": "Layers of fog and light, Karawanken, Austria",
             "description": "",
-            "ratio": "2364 \/ 1577",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2132,7 +2133,7 @@
             "name": "koritnica-sunset",
             "title": "Sunset over the Koritnica river, Slovenia",
             "description": "",
-            "ratio": "243 \/ 367",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -2149,7 +2150,7 @@
             "name": "liebenfels-castle-sunset",
             "title": "Liebenfels castle, Carinthia, Austria",
             "description": "Incredible pink winter sunset over Liebenfels castle.",
-            "ratio": "511 \/ 766",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -2170,7 +2171,7 @@
             "name": "lake-sevan-monastery",
             "title": "Armenian monastery at lake Sevan, Armenia",
             "description": "",
-            "ratio": "1593 \/ 1060",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2192,7 +2193,7 @@
             "name": "lucern-bridge",
             "title": "Golden afternoon light in Lucerne, Switzerland",
             "description": "The famous wooden bridge: Kapellbr\u00fccke, Lucerne .",
-            "ratio": "1738 \/ 1159",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2212,7 +2213,7 @@
             "name": "magdalensberg-foggy-forest",
             "title": "Light and fog in the forest, Magdalensberg, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2232,7 +2233,7 @@
             "name": "mangart-saddle",
             "title": "Views from Mangart back in to Slovenia",
             "description": "The precarious road to Mangart saddle is not for the faint hearted.",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2269,7 +2270,7 @@
             "name": "maria-worth-sunrise",
             "title": "Sunrise over Maria W\u00f6rth, W\u00f6rthersee, Austria",
             "description": "",
-            "ratio": "2377 \/ 1585",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2309,7 +2310,7 @@
             "name": "mondsee-sunrise-4",
             "title": "Cold and warm layers of light, Mondsee, Austria",
             "description": "Layers of light, cloud and mountains in Salzkammergut as the sun slowly rises above the peaks from Kulmspitze on lake Mondsee.",
-            "ratio": "2333 \/ 1556",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2329,7 +2330,7 @@
             "name": "san-gimignano-full-moon",
             "title": "Full moon over San Gimignano, Tuscany, Italy",
             "description": "",
-            "ratio": "16 \/ 9",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2371,7 +2372,7 @@
             "name": "san-gimignano-sunrise-street",
             "title": "San Gimignano, Tuscany, Italy",
             "description": "Warm spring sunrise over the hills and mountains of Tuscany through a medieval archway in San Gimignano, Siena, Italy.",
-            "ratio": "1543 \/ 2313",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -2391,7 +2392,7 @@
             "name": "schladming-fog-light-trees",
             "title": "Light piercing through the fog, Schladming, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2411,7 +2412,7 @@
             "name": "saualpe-sunrise",
             "title": "Warm winter sunrise on the Saualpe, Carinthia, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2431,7 +2432,7 @@
             "name": "sunrise-schneeberg-3",
             "title": "Schneeberg sunrise, Austria",
             "description": "A Colour sunrise over the mountains and hills surrounding Schneeberg with thick fog in the distant planes.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2488,7 +2489,7 @@
             "name": "nussberg-autumn-vineyard",
             "title": "Nussberg, Vienna, Austria",
             "description": "Thick fog in on an autumn day in the colourful vineyards of Nussberg, Vienna, Austria.",
-            "ratio": "517 \/ 775",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -2508,7 +2509,7 @@
             "name": "patara-beach-sunset",
             "title": "Warm hazy sunset, Patara Beach, Turkey",
             "description": "",
-            "ratio": "2349 \/ 1567",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2525,7 +2526,7 @@
             "name": "obertilliach-lesachtal-winter",
             "title": "Obertilliach, Carinthia, Austria",
             "description": "Small cute church covered in a thick blanket of snow in the alpine valley of Lesachtal, Obertilliach, Carinthia, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2583,7 +2584,7 @@
             "name": "hochosterwitz-winter-snow-sunrise",
             "title": "Hochosterwitz castle after a big snow fall, Austria",
             "description": "",
-            "ratio": "1748 \/ 1165",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2629,7 +2630,7 @@
             ],
             "exif": {
                 "Aperture": "f\/9.0",
-                "Exposure": "1\/15",
+                "Exposure": "1\/3",
                 "ISO": 100,
                 "Focal Length": "16 mm",
                 "Date Taken": "Oct 23, 2021",
@@ -2641,7 +2642,7 @@
             "name": "foggy-trees-slovenia",
             "title": "A lone tree standing out in the fog, Slovenia",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2662,7 +2663,7 @@
             "name": "foggy-forest",
             "title": "A forest in Carinthia, Austria",
             "description": "A romantic trail weaves through the misty forest.",
-            "ratio": "1567 \/ 2350",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -2682,7 +2683,7 @@
             "name": "espot",
             "title": "Aig\u00fcestortes i Estany de Sant Maurici National Park, Spain",
             "description": "Mountain panorama in Aig\u00fcestortes i Estany de Sant Maurici National Park.",
-            "ratio": "1759 \/ 1173",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2716,7 +2717,7 @@
             "name": "dobratsch-sunset",
             "title": "Sunset in Dobratsch Nature Park, Austria",
             "description": "I was rewarded with a beautiful sunset after savage cold winds froze my brain and bones all day.",
-            "ratio": "2355 \/ 1571",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2807,7 +2808,7 @@
             "name": "bagrati-cathedral",
             "title": "Bagrati Cathedral, Georgia",
             "description": "Beautiful stormy sunset over Bagrati Cathedral in Kutaisi, Georgia.",
-            "ratio": "1795 \/ 1197",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2827,7 +2828,7 @@
             "name": "adishi-glacier",
             "title": "Adishi Glacier, Georgia",
             "description": "Thousands of Rhododendron flowers on the mountains surrounding Adishi Glacier in Georgia.",
-            "ratio": "1741 \/ 1161",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2847,7 +2848,7 @@
             "name": "bled-winter",
             "title": "Lake Bled, Slovenia",
             "description": "The fog slowly lifts over Lake Bled in Slovenia, revealing the surrounding landscape and mountains.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -2864,7 +2865,7 @@
             "name": "dobratsch-church-snow",
             "title": "Snowy Dobratsch and it's tiny Church, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2946,7 +2947,7 @@
             "name": "florence-bluehour",
             "title": "Foggy winter sunset over Florence, Tuscany, Italy",
             "description": "",
-            "ratio": "1730 \/ 1153",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -2966,7 +2967,7 @@
             "name": "diex-from-karawanken",
             "title": "Diex from the Karawanken mountains, Carinthia, Austria",
             "description": "A beautiful pink sunrise in the Karawanken mountains with the alpine village of Diex and the Saualpe mountains in the background.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3007,7 +3008,7 @@
             "name": "foggy-forest-autumn",
             "title": "Fog rolling through the forest, Austria",
             "description": "Taken on a 7 day hike through the Kalkalpen National Park in Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3067,7 +3068,7 @@
             "name": "khalde-afternoon-glow",
             "title": "The almost abandoned village of Khalde, Svaneti, Georgia",
             "description": "",
-            "ratio": "949 \/ 1186",
+            "ratio": "4 \/ 5",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -3084,7 +3085,7 @@
             "name": "lagodekhi-np-fog-ridge",
             "title": "Lagodekhi National Park, Georgia",
             "description": "A mountain ridge hiking path protruding through the clouds during a perfect moment of calm. Floating in the clouds at 2000M high.",
-            "ratio": "1706 \/ 1137",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3105,7 +3106,7 @@
             "name": "lake-tuz-sunset",
             "title": "Lake Tuz, Turkey",
             "description": "Bizarre salt patterns on the surface of Lake Tuz during sunset in Turkey.",
-            "ratio": "1540 \/ 2309",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -3125,7 +3126,7 @@
             "name": "lower-carinthia-foggy-sunrise",
             "title": "A foggy pastel sunrise in Lower Carinthia, Austria",
             "description": "",
-            "ratio": "2309 \/ 1540",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3146,7 +3147,7 @@
             "name": "magdalensberg-foggy-sunset",
             "title": "Magdalensberg, Carinthia, Austria",
             "description": "Golden light burns through the thick fog filled forests.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3186,7 +3187,7 @@
             "name": "stein-sunrise",
             "title": "Stein, Austria",
             "description": "A beautiful summer sunrise over the Danube in Stein, Austria.",
-            "ratio": "1183 \/ 1774",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -3247,7 +3248,7 @@
             "name": "tbilisi-sunset",
             "title": "Sunset over Tbilisi, Georgia",
             "description": "Monasteries, wooden balconies and a beautiful pink sunset. Perfect Tbilisi.",
-            "ratio": "1792 \/ 1195",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3267,7 +3268,7 @@
             "name": "schladming-fog-strip",
             "title": "A glimpse through the fog, Schladming, Austria",
             "description": "Thick fog leaves only a slither of landscape visible where soft light illuminates the Styrian forest.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3287,7 +3288,7 @@
             "name": "rabati-castle-akhaltsikhe-sunset",
             "title": "Burning sunset from Rabati Castle in Akhaltsikhe, Georgia",
             "description": "",
-            "ratio": "667 \/ 1000",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -3328,7 +3329,7 @@
             "name": "patara-beach",
             "title": "Patara beach, Turkey",
             "description": "Warm light over the ripples of sand on Patara beach leading to the Taurus mountains, Kalkan, Turkey.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -3345,7 +3346,7 @@
             "name": "ortahisar-sunrise",
             "title": "Ortahisar sunrise, Cappadocia, Turkey",
             "description": "Ortahisar village at sunrise with its castle standing tall with mount Erciyes nestled between the castle and mosque.",
-            "ratio": "793 \/ 529",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3366,7 +3367,7 @@
             "name": "ocean-sunset-turkey",
             "title": "Aegean coast, Turkey",
             "description": "A boat in the far distance as the sun sets over the Aegean coast with deep pink and orange hues near Fethiye, Turkey.",
-            "ratio": "795 \/ 1192",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -3403,7 +3404,7 @@
             "name": "mondsee-sunrise",
             "title": "Mondsee, Upper Austria, Austria",
             "description": "Layers of light, cloud, mountains and the valley floor in Salzkammergut from Kulmspitze on lake Mondsee.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3441,7 +3442,7 @@
             "name": "magdalensberg-troadkasten-sunset",
             "title": "Troadkasten, Magdalensberg, Austria",
             "description": "A pink and purple autumn sunset over the Troadkasten at Magdalensberg, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3461,7 +3462,7 @@
             "name": "klosterneuburg-sunset",
             "title": "Klosterneuburg, Austria",
             "description": "Burning sunset over Klosterneuburg from Leopoldsberg, Vienna, Austria.",
-            "ratio": "1772 \/ 1181",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -3478,7 +3479,7 @@
             "name": "khiva",
             "title": "Khiva, Uzbekistan",
             "description": "",
-            "ratio": "1741 \/ 1161",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3498,7 +3499,7 @@
             "name": "kalkalpen-sunset",
             "title": "Autumn sunset in the kalkalpen, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3535,7 +3536,7 @@
             "name": "essleggerhof",
             "title": "H\u00f6rzendorf, Austria",
             "description": "Tiny village of H\u00f6rzendorf nestled between the Karawanken mountains, covered in thick fog at sunrise with only a church spire visible.",
-            "ratio": "2311 \/ 1541",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3593,7 +3594,7 @@
             "name": "butterfly-valley-sunset",
             "title": "Butterfly Valley sunset, Turkey",
             "description": "A beautiful sunset over the incredible Butterfly Valley only accessible by boat, or vertical cliff descent.",
-            "ratio": "1795 \/ 1197",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -3644,7 +3645,7 @@
             "name": "foggy-morning-kalkalpen-2",
             "title": "Fog hanging over the Kalkalpen mountains, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -3661,7 +3662,7 @@
             "name": "gesause-massif-sea-fog",
             "title": "A sea of fog below the Ges\u00e4use massif, Styria, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3681,7 +3682,7 @@
             "name": "holy-trinity-cathedral-reflections",
             "title": "Holy Trinity Cathedral of Tbilisi, Georgia",
             "description": "",
-            "ratio": "501 \/ 626",
+            "ratio": "4 \/ 5",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -3701,7 +3702,7 @@
             "name": "iztuzu-beach-sunrise",
             "title": "Iztuzu beach sunset, Turkey",
             "description": "Panoramic sunset view of Iztuzu beach, turtle breeding ground. Mountains, lagoon and delta of the river Dalyan.",
-            "ratio": "1703 \/ 864",
+            "ratio": "1500 \/ 761",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -3718,7 +3719,7 @@
             "name": "magdalensberg-foggy-lowlands",
             "title": "Foggy lowlands, Carinthia, Austria",
             "description": "Thick fog weighs on the lowlands of Carinthia apart from the odd building or church tower poking through the mist.",
-            "ratio": "1917 \/ 1078",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3738,7 +3739,7 @@
             "name": "magdalensberg-snow-morning",
             "title": "Magdalensberg winter sunrise, Austria",
             "description": "Magical winter sunrise over Magdalensberg with perfect untouched snow and thick fog covering the valley.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3758,7 +3759,7 @@
             "name": "lake-sevan-lada",
             "title": "Lada, Lake Sevan, Armenia",
             "description": "",
-            "ratio": "1637 \/ 1090",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3838,7 +3839,7 @@
             "name": "schonbuhel-winter",
             "title": "Sch\u00f6nb\u00fchel Castle, Wachau, Austria",
             "description": "Sch\u00f6nb\u00fchel Castle on a cold snowy day.",
-            "ratio": "2349 \/ 1567",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3899,7 +3900,7 @@
             "name": "st-gilgen-sunrise",
             "title": "St.Gilgen, Wolfgangsee, Salzkammergut, Austria",
             "description": "Early morning light over Sankt Gilgen on lake Wolfgangsee during autumn with low hanging clouds surrounding the mountains.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3920,7 +3921,7 @@
             "name": "sunrise-romania-countryside-cows",
             "title": "Foggy sunrise in Romania with sleepy cows",
             "description": "",
-            "ratio": "1663 \/ 1109",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3940,7 +3941,7 @@
             "name": "traunsee-storm",
             "title": "Storm over Traunsee, Austria",
             "description": "Black rain clouds pouring over lake Traunsee on a stormy autumn day.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -3960,7 +3961,7 @@
             "name": "admonthaus-fog-sea",
             "title": "Sea of fog over the Admont valley, Austria",
             "description": "Jagged peaks rise through the sea of fog on a sunny autumn day after a morning of rain.",
-            "ratio": "2374 \/ 1583",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4000,7 +4001,7 @@
             "name": "colle-di-val-delsa-2",
             "title": "Colle di Val d'Elsa, Tuscany, Italy",
             "description": "Romantic side street in Colle di Val d'Elsa, Tuscany, Italy at blue hour with illuminated street lamps.",
-            "ratio": "1576 \/ 2363",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4081,7 +4082,7 @@
             "name": "hochosterwitz-fog-2",
             "title": "Hochosterwitz castle, Carinthia, Austria",
             "description": "A rare magical morning with Hochosterwitz castle floating above a sea of fog with subtle pink and purple sunrise tones.",
-            "ratio": "1611 \/ 1075",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4122,7 +4123,7 @@
             "name": "lake-predil",
             "title": "Lake Predil, Italy",
             "description": "Calm water reflections on a cold evening purple sunset at lake Predil, Italy.",
-            "ratio": "1469 \/ 973",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4139,7 +4140,7 @@
             "name": "volkermarkter-stauseebrucke",
             "title": "V\u00f6lkermarkt dam, Carinthia, Austria",
             "description": "Perfect morning reflections at Volkermarkt dam with sunlight illuminating the bridge and fog separating the water and Karawanken mountains.",
-            "ratio": "1585 \/ 2376",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4179,7 +4180,7 @@
             "name": "triglav-alpenglow",
             "title": "Triglav National Park Alpenglow, Slovenia",
             "description": "Deep red alpenglow sunset over the Triglav mountains from the So\u010da valley.",
-            "ratio": "1377 \/ 775",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4196,7 +4197,7 @@
             "name": "traunsee-sunset",
             "title": "Golden light over the mountains around Traunsee, Austria",
             "description": "Light breaks through during a stormy day of constant downpour.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4216,7 +4217,7 @@
             "name": "zell-pfarre-winter",
             "title": "Zell-pfarre, Carinthia, Austria",
             "description": "Zell-pfarre in the Karawanken mountains at sunset on a perfect winter day.",
-            "ratio": "1177 \/ 1766",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4237,7 +4238,7 @@
             "name": "sunrise-schneeberg-2",
             "title": "Sunrise from Schneeberg, Austria",
             "description": "Vibrant pinks and reds over the mountain peaks of Austria including the Rax plateau from Schneeberg in autumn, Lower Austria, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4254,7 +4255,7 @@
             "name": "schloss-hohenstein-fog-sunrise",
             "title": "Castle Hohenstein, Carinthia, Austria",
             "description": "Castle Hohenstein during a magical sunrise with vibrant colours and thick fog, Carinthia, Austria.",
-            "ratio": "1177 \/ 785",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4275,7 +4276,7 @@
             "name": "shatili-sunset",
             "title": "Shatili, Khevsureti, Georgia",
             "description": "The ancient medieval village of Shatili, Khevsureti during a stormy sunset.",
-            "ratio": "1781 \/ 1187",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4297,7 +4298,7 @@
             "name": "predil-pass",
             "title": "Views from Predil pass, Slovenia",
             "description": "Light and shadows on the gigantic mountain walls of the Julian Alps, Slovenia.",
-            "ratio": "219 \/ 145",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4337,7 +4338,7 @@
             "name": "last-light-lake-island",
             "title": "Lake Obersee, Lower Austria, Austria",
             "description": "The last sun rays on a hot summers day illuminate the trees on a tiny island in lake Obsersee on a hiking trail from Lunz am See.",
-            "ratio": "2367 \/ 1579",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4377,7 +4378,7 @@
             "name": "above-johnsbach-sun-fog-2",
             "title": "Light and fog high on the trail above Johnsbach, Austria",
             "description": "",
-            "ratio": "1549 \/ 2323",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4397,7 +4398,7 @@
             "name": "bled-winter-evening",
             "title": "Lake bled lit up on a cold foggy winters evening, Slovenia",
             "description": "",
-            "ratio": "1165 \/ 777",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4422,7 +4423,7 @@
             "disabled": false,
             "exif": {
                 "Aperture": "f\/9.0",
-                "Exposure": "13\/10",
+                "Exposure": "15\/10",
                 "ISO": 100,
                 "Focal Length": "50.5 mm",
                 "Date Taken": "Jun 17, 2019",
@@ -4434,7 +4435,7 @@
             "name": "ennstaler-hutte-sunset",
             "title": "Sunset at Ennstalerh\u00fctte, Austria",
             "description": "The last of the sun beaming golden rays in to the hazy valley from Ennstalerh\u00fctte, Austria.",
-            "ratio": "778 \/ 519",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4476,7 +4477,7 @@
             "name": "essleggerhof-2",
             "title": "H\u00f6rzendorf, Carinthia, Austria",
             "description": "Tiny village of H\u00f6rzendorf nestled between the Karawanken mountains, covered in thick fog at sunrise with only a church spire visible.",
-            "ratio": "1183 \/ 789",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4497,7 +4498,7 @@
             "name": "foggy-morning-kalkalpen",
             "title": "Fog rolls through the autumn pines in Kalkalpen National Park, Austria",
             "description": "",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4518,7 +4519,7 @@
             "name": "kanal-reflections",
             "title": "Kanal, Slovenia",
             "description": "The cute village of Kanal reflecting in the turquoise So\u010da river.",
-            "ratio": "157 \/ 237",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4538,7 +4539,7 @@
             "name": "karawanken-winter-sunset",
             "title": "Grades, Carinthia, Austria",
             "description": "Vibrant sunrise with road leading to the Karawanken mountains and mount Triglav, the highest in Slovenia.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4575,7 +4576,7 @@
             "name": "koruldi-lakes-rainbow",
             "title": "Rainbow, Koruldi Lakes, Georgia",
             "description": "A perfect rainbow formed over our tent, right after a terrifying raging storm finished.",
-            "ratio": "1796 \/ 1197",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4652,7 +4653,7 @@
             "name": "mondsee-sunrise-2",
             "title": "Mondsee, Upper Austria, Austria",
             "description": "Pastel pink autumn sunrise over lake Mondsee and the Salzkammergut mountains with fog drifting through the valley.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4660,7 +4661,7 @@
             ],
             "exif": {
                 "Aperture": "f\/10.0",
-                "Exposure": "8\/10",
+                "Exposure": "6\/10",
                 "ISO": 100,
                 "Focal Length": "70 mm",
                 "Date Taken": "Oct 24, 2021",
@@ -4712,7 +4713,7 @@
             "name": "tinghir",
             "title": "Tinghir Kasbah, Morocco",
             "description": "A storm brewing over a Kasbah in Tinghir.",
-            "ratio": "1792 \/ 1195",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4732,12 +4733,12 @@
             "name": "uchisar-cave-sunrise",
             "title": "Sunrise from a cave in U\u00e7hisar, Cappadocia, Turkey",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
                 "Aperture": "f\/8.0",
-                "Exposure": "1\/100",
+                "Exposure": "1\/160",
                 "ISO": 200,
                 "Focal Length": "16 mm",
                 "Date Taken": "Jul 31, 2022",
@@ -4769,7 +4770,7 @@
             "name": "znojmo-2",
             "title": "Znojmo, Czechia",
             "description": "",
-            "ratio": "513 \/ 769",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4789,7 +4790,7 @@
             "name": "pakhlavan-mahmoud-mausoleum-khiva",
             "title": "Pakhlavan Mahmoud Mausoleum, Khiva, Uzbekistan",
             "description": "",
-            "ratio": "1189 \/ 1783",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -4809,7 +4810,7 @@
             "name": "piatra-craiului-np-forest-light",
             "title": "Light and shadows in the midst of the pines, Romania",
             "description": "",
-            "ratio": "1798 \/ 1199",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4826,7 +4827,7 @@
             "name": "dachstein-sunset",
             "title": "Dachstein alpenglow, Austria",
             "description": "Dachstein glowing with the last light on a sunny autumn day.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4846,7 +4847,7 @@
             "name": "grindelwald",
             "title": "Grindelwald, Switzerland",
             "description": "",
-            "ratio": "1739 \/ 1159",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4863,7 +4864,7 @@
             "name": "iztuzu-beach-sunset",
             "title": "Iztuzu beach sunset, Turkey",
             "description": "",
-            "ratio": "1923 \/ 604",
+            "ratio": "500 \/ 157",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -4917,7 +4918,7 @@
             "name": "magdalensberg-warm-foggy-sunset",
             "title": "Golden sunrise on Magdalensberg with sea of clouds below, Carinthia, Austria",
             "description": "",
-            "ratio": "1553 \/ 1200",
+            "ratio": "1500 \/ 1159",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4938,7 +4939,7 @@
             "name": "uchisar-blue-hour",
             "title": "U\u00e7hisar, Cappadocia, Turkey",
             "description": "U\u00e7hisar glowing in the blue hour light before sunrise.",
-            "ratio": "2344 \/ 1231",
+            "ratio": "40 \/ 21",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -4958,7 +4959,7 @@
             "name": "transfagarasan-sunrise",
             "title": "Sunrise from lake B\u00e2lea on the Transf\u0103g\u0103r\u0103\u0219an alpine road, Romania",
             "description": "Looking down into the valley plains from high above, where the fog rolls around the hills and the sky burns bright before the sun has even rose.",
-            "ratio": "1742 \/ 1161",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5016,7 +5017,7 @@
             "name": "most-na-soci-sunset",
             "title": "Sunset over the river So\u010da, Slovenia",
             "description": "",
-            "ratio": "1447 \/ 958",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5053,7 +5054,7 @@
             "name": "magdalensberg-foggy-forest-light",
             "title": "Warm sun penetrating the foggy forests of Magdalensberg, Carinthia, Austria",
             "description": "",
-            "ratio": "1556 \/ 2333",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -5073,7 +5074,7 @@
             "name": "koruldi-lakes-storm-rainbow",
             "title": "Storm brewing in the Caucasus mountains, Georgia",
             "description": "Watching the storm brew with sun and cloud fighting for victory with rainbows above the peaks, from Koruldi Lakes.",
-            "ratio": "1800 \/ 1013",
+            "ratio": "375 \/ 211",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5093,7 +5094,7 @@
             "name": "kas-sunset",
             "title": "Ka\u015f, from above, Turkey",
             "description": "",
-            "ratio": "1180 \/ 787",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5113,7 +5114,7 @@
             "name": "fog-morning-predil",
             "title": "Lake Predil, Italy",
             "description": "Foggy morning at lake Predil, Italy.",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5130,7 +5131,7 @@
             "name": "green-lake-tent-bluehour",
             "title": "Camping at the Green lake near G\u00f6mbe, Turkey",
             "description": "",
-            "ratio": "1730 \/ 1153",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5147,7 +5148,7 @@
             "name": "hochosterwitz-fog",
             "title": "Hochosterwitz castle, Carinthia, Austria",
             "description": "A rare magical morning with Hochosterwitz castle floating above a sea of fog with subtle pink and purple sunrise tones.",
-            "ratio": "1180 \/ 787",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5168,7 +5169,7 @@
             "name": "climbing-triglav-np",
             "title": "Climbing on mount Triglav, Slovenia",
             "description": "",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5205,7 +5206,7 @@
             "name": "klamm-ruins-fog",
             "title": "Klamm ruins, Semmering, Austria",
             "description": "Fog rising in the lush green valley after a rainstorm with Klamm ruins in the background.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5242,7 +5243,7 @@
             "name": "mount-tetnuldi-sunrise",
             "title": "Pastel pink sunrise over a snowy mount Tetnuldi in Svaneti, Georgia",
             "description": "",
-            "ratio": "1769 \/ 1179",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5259,7 +5260,7 @@
             "name": "old-tree-fog-autumn",
             "title": "An ancient tree, Johnsbach, Austria",
             "description": "An ancient tree in the foggy autumnal forests of Johnsbach, Austria.",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5279,7 +5280,7 @@
             "name": "mondsee-fog-sunrise",
             "title": "Mondsee hills, Upper Austria, Austria",
             "description": "Fog engulfed autumn landscape during sunrise from Mondsee Kulmspitze look out point.",
-            "ratio": "2377 \/ 1585",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5320,7 +5321,7 @@
             "name": "st-gilgen-cable-car",
             "title": "Cute Wes Anderson like cable cars at Wolfgangsee, Austria",
             "description": "Unfortunately it's now decommissioned and removed - I'm glad I captured this moment.",
-            "ratio": "1115 \/ 1672",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -5357,7 +5358,7 @@
             "name": "butterfly-valley-pano",
             "title": "Butterly valley sunset panorama, Turkey",
             "description": "",
-            "ratio": "3397 \/ 1451",
+            "ratio": "1500 \/ 641",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5374,7 +5375,7 @@
             "name": "goldeck-sunset",
             "title": "Winter sunset with jagged peaks, Goldeck, Austria",
             "description": "",
-            "ratio": "1186 \/ 791",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5394,7 +5395,7 @@
             "name": "gesause-massif-sea-fog-2",
             "title": "A sea of fog below the Ges\u00e4use massif, Styria, Austria",
             "description": "",
-            "ratio": "779 \/ 1168",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -5411,7 +5412,7 @@
             "name": "koprulu-canyon-sunrise",
             "title": "Sunrise in K\u00f6pr\u00fcl\u00fc Canyon, Turkey",
             "description": "",
-            "ratio": "1177 \/ 1766",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -5428,7 +5429,7 @@
             "name": "lone-tower-shatili",
             "title": "Lebaiskari tower, Shatilli, Georgia",
             "description": "Last light on Lebaiskari tower at the foot of Datvisjvari pass, Khevsureti.",
-            "ratio": "1669 \/ 1113",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5488,7 +5489,7 @@
             "name": "triglav-np-fog-rolling",
             "title": "Triglav National Park, Slovenia",
             "description": "Fog rolling over a mountain in the national park during sunset.",
-            "ratio": "1478 \/ 979",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5508,7 +5509,7 @@
             "name": "zapotoski-waterfall",
             "title": "Zapoto\u0161ki waterfall, Slovenia",
             "description": "A long hard trek through blistering sun. Worth every second for that intensely clear turquoise water.",
-            "ratio": "1461 \/ 968",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5562,7 +5563,7 @@
             "name": "lake-ossiach-sunset",
             "title": "Winter sunset at Lake Lake Ossiach, Carinthia, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5579,7 +5580,7 @@
             "name": "gachedili-canyon",
             "title": "Gachedili canyon, Georgia",
             "description": "Crazy beautiful layered rock formations in a canyon filled with turquoise swimming water near Martvili.",
-            "ratio": "1748 \/ 1165",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5658,7 +5659,7 @@
             "name": "espot-2",
             "title": "Aig\u00fcestortes i Estany de Sant Maurici National Park",
             "description": "Early morning reflections at a high alpine lake after a fresh snow fall.",
-            "ratio": "1745 \/ 1163",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5695,7 +5696,7 @@
             "name": "karawanken-sunrise",
             "title": "Winter sunrise in the heart of the Karawanken mountains, Austria",
             "description": "",
-            "ratio": "2101 \/ 1401",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5715,7 +5716,7 @@
             "name": "blue-foggy-mountain",
             "title": "Thick blue fog in Ges\u00e4use National Park, Austria",
             "description": "The fog was so heavy and thick that even in the middle of the day it cast a deep blue shade with only silhouettes of the mountains visible.",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -5753,7 +5754,7 @@
             "name": "admonthaus-rainbow",
             "title": "Rainbow over the Kalkalpen mountains, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5773,7 +5774,7 @@
             "name": "hochosterwitz-summer",
             "title": "Hochosterwitz Castle on a lush green summer morning, Carinthia, Austria",
             "description": "",
-            "ratio": "1772 \/ 1181",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5793,7 +5794,7 @@
             "name": "messner-mountain-museum",
             "title": "Messner Mountain Museum, Italy",
             "description": "",
-            "ratio": "1741 \/ 1161",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5868,7 +5869,7 @@
             "name": "koruldi-lakes-horses",
             "title": "Horses at Koruldi Lakes, 2700M high, Georgia",
             "description": "Idyllic scene with horses walking along a lake shore with snowy mountains in the background.",
-            "ratio": "1278 \/ 719",
+            "ratio": "3000 \/ 1687",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5885,7 +5886,7 @@
             "name": "saualpe-fog-sunrise",
             "title": "Warm foggy sunrise in the Saualpe, Austria",
             "description": "Hills floating above the fog appear to be islands in the sky.",
-            "ratio": "2317 \/ 1545",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -5905,7 +5906,7 @@
             "name": "transfagarasan-mountains-sunset",
             "title": "Sunset over a waterfall in the F\u0103g\u0103ra\u0219  Mountains, Romania",
             "description": "",
-            "ratio": "1792 \/ 1195",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5922,7 +5923,7 @@
             "name": "turkey-love-valley-sunrise",
             "title": "Sunrise at Love Valley, Cappadocia",
             "description": "",
-            "ratio": "1720 \/ 1147",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "exif": {
@@ -5959,7 +5960,7 @@
             "name": "archaeology-museum-tbilisi",
             "title": "Archaeology Museum, Tbilisi, Georgia",
             "description": "",
-            "ratio": "1191 \/ 1787",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -6016,7 +6017,7 @@
             "name": "st-gilgen-cable-car-2",
             "title": "Cable cars above Wolfgangsee, Austria",
             "description": "",
-            "ratio": "591 \/ 887",
+            "ratio": "1971 \/ 2956",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -6033,7 +6034,7 @@
             "name": "uzbek-fortress",
             "title": "Kizil Kala, Uzbekistan",
             "description": "A desert fortress in the Karakalpakstan region of Uzbekistan.",
-            "ratio": "1792 \/ 1195",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -6053,7 +6054,7 @@
             "name": "vienna-sunset",
             "title": "Sunset over Vienna, Austria",
             "description": "",
-            "ratio": "1323 \/ 1984",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -6094,7 +6095,7 @@
             "name": "after-storm-gesause",
             "title": "High above Johnsbach as the storm begins to clear, Austria",
             "description": "",
-            "ratio": "1591 \/ 2386",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
@@ -6132,7 +6133,7 @@
             "name": "admonthaus-sunset",
             "title": "Moody sunset over Admont, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -6152,7 +6153,7 @@
             "name": "kalkalpen-afternoon-light",
             "title": "Perfect autumn scene in Kalkalpen National Park, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -6172,7 +6173,7 @@
             "name": "north-east-italy-sunset",
             "title": "Sunset in North Eastern Italy",
             "description": "",
-            "ratio": "940 \/ 1419",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "exif": {
@@ -6189,7 +6190,7 @@
             "name": "semmering-sunset",
             "title": "Winter sunset in Semmering as the fog rolls in, Austria",
             "description": "",
-            "ratio": "2386 \/ 1591",
+            "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
             "albums": [
@@ -6229,7 +6230,7 @@
             "name": "russia-georgia-friendship-monument-abandoned-building",
             "title": "Russia-Georgia friendship monument",
             "description": "From an abandoned hotel on the Georgian military highway.",
-            "ratio": "1087 \/ 1633",
+            "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
             "albums": [
