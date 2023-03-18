@@ -9,7 +9,7 @@ export default {
         }
     },
     methods: {
-        photoSource: name => '/src/photos/' + name,
+        photoSource: name => '/photos/' + name,
     },
 }
 </script>

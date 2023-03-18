@@ -145,7 +145,12 @@ export default {
     },
     methods: {
         randomIntBetween: (min, max) => Math.floor(Math.random() * (max - min + 1) + min),
-        photoSource: name => '/src/photos/' + name,
+        photoSource(img) {
+            if (img.orientation === 'landscape') {
+                return '/photos/' + img.src + '?nf_resize=fit&w=1000';
+            }
+            return '/photos/' + img.src + '?nf_resize=fit&h=500';
+        },
         selectImage(img, index) {
             this.selectedImageIndex = index;
             this.selectedImage = img;
@@ -315,7 +320,7 @@ export default {
         <div ref="rows" v-for="row in rows" class="opacity-0 transition-[opacity,transform] translate-y-[50px] duration-1000 ease-in w-full flex flex-wrap md:flex-nowrap gap-4 m-2">
             <template v-for="img in row">
                 <div @click="selectImage(img, img.index)" class=" w-full md:w-auto item relative group hover:cursor-pointer md:basis-0 md:grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
-                    <img :ref="(el) => (imageElements[img.index] = el)" class="w-full h-auto block transition-scale  duration-300 ease-in opacity-1 group-hover:scale-[1.01] group-hover:opacity-60" loading="lazy" :src="photoSource(img.src)" alt="img.title"/>
+                    <img :ref="(el) => (imageElements[img.index] = el)" class="w-full h-auto block transition-scale  duration-300 ease-in opacity-1 group-hover:scale-[1.01] group-hover:opacity-60" loading="lazy" :src="photoSource(img)" alt="img.title"/>
                     <p class="text-white font-bungee-hairline font-bold text-stone-100 text-center text-sm lg:text-base absolute hidden group-hover:flex left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">{{img.title}}</p>
                 </div>
             </template>

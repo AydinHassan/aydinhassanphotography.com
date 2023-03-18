@@ -9,7 +9,7 @@ export default{
         return{
             portfolio: portfolio,
             links: config.links,
-            bgSrc: '/src/photos/lake-tuz-mirror-sunset.jpg'
+            bgSrc: '/photos/lake-tuz-mirror-sunset.jpg'
         }
     },
 }
