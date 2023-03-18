@@ -4,6 +4,7 @@ import Info from "./icons/Info.vue";
 import Camera from "./icons/Camera.vue";
 import Date from "./icons/Date.vue";
 import debounce from "../utils/debounce.js";
+import Fade from "./Fade.vue";
 
 const scrollElementIntoView = (element) => {
     if (element) {
@@ -16,6 +17,7 @@ const scrollElementIntoView = (element) => {
 
 export default {
     components: {
+        Fade,
         Date,
         Camera,
         Info
@@ -56,6 +58,19 @@ export default {
 
         document.addEventListener('keyup', this.$el.keyUpEventHandler);
         window.addEventListener('resize', this.$el.resizeEventHandler);
+
+        this.observer = new IntersectionObserver(
+            this.onElementObserved,
+            {
+                root: null,
+                threshold: 0,
+                rootMargin: '0 0 -50px 0'
+            }
+        );
+
+        for (let i = 0; i < this.$refs.rows.length; i++) {
+            this.observer.observe(this.$refs.rows[i]);
+        }
     },
     unmounted() {
         document.removeEventListener('keyup', this.$el.keyUpEventHandler);
@@ -72,7 +87,8 @@ export default {
             showTitle: false,
             showTitleTimer: null,
             showInfo: false,
-            imgInfoStyles: {}
+            imgInfoStyles: {},
+            observer: null,
         }
     },
     computed: {
@@ -253,7 +269,7 @@ export default {
                 this.showTitle = true;
 
                 this.createHideTitleTimer();
-            }, 200)();
+            }, 100)();
         },
         cancelHideTitleTimer() {
             if (this.showTitleTimer) {
@@ -279,27 +295,34 @@ export default {
 
             this.showInfo = false;
             this.showTitle = false;
+        },
+        onElementObserved(entries) {
+            entries.forEach(({ target, isIntersecting}) => {
+                if (isIntersecting) {
+                    target.classList.add('transform-none', 'opacity-100');
+                    target.classList.remove('opacity-0');
+                    this.observer.unobserve(target);
+                }
+            });
         }
-    }
+    },
 }
 </script>
 
 <template>
     <div class="container lg:w-3/4 mx-auto flex justify-center flex-wrap relative mb-10">
         <slot name="title"></slot>
-        <div v-for="row in rows" class="w-full flex flex-wrap md:flex-nowrap gap-4 m-2">
+        <div ref="rows" v-for="row in rows" class="opacity-0 transition-[opacity,transform] translate-y-[50px] duration-1000 ease-in w-full flex flex-wrap md:flex-nowrap gap-4 m-2">
             <template v-for="img in row">
-                <div @click="selectImage(img, img.index)" class="w-full md:w-auto item relative group hover:cursor-pointer md:basis-0 md:grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
-                    <img :ref="(el) => (imageElements[img.index] = el)" class="w-full h-auto block opacity-1 transition-opacity duration-200 ease-in opacity-1 group-hover:opacity-60" loading="lazy" :src="photoSource(img.src)" alt="img.title"/>
+                <div @click="selectImage(img, img.index)" class=" w-full md:w-auto item relative group hover:cursor-pointer md:basis-0 md:grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
+                    <img :ref="(el) => (imageElements[img.index] = el)" class="w-full h-auto block transition-scale  duration-300 ease-in opacity-1 group-hover:scale-[1.01] group-hover:opacity-60" loading="lazy" :src="photoSource(img.src)" alt="img.title"/>
                     <p class="text-white font-bungee-hairline font-bold text-stone-100 text-center text-sm lg:text-base absolute hidden group-hover:flex left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">{{img.title}}</p>
                 </div>
             </template>
 
         </div>
         <Teleport to="body">
-            <Transition enter-active-class="transition-opacity duration-300 ease-in"
-                        leave-active-class="transition-opacity duration-300 ease-in" enter-from-class="opacity-0"
-                        enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
+            <Fade>
                 <div ref="imgOverlay" @mousemove="showTitleNow" @click="outsideImage" v-if="selectedImage" class="fixed inset-0 z-40 w-screen h-screen bg-black/80 flex justify-center items-center portrait:py-32 landscape:py-8 sm:py-20 md:py-12">
                     <button class="fixed z-30 top-2 right-4 text-white text-4xl hover:text-orange-400 origin-bottom hover:-rotate-12 transition duration-500" @click.stop="closeImage">&times;</button>
                     <button class="fixed z-30 top-5 left-4 text-4xl hover:text-orange-400 origin-bottom transition duration-500" :class="{'text-orange-400': showInfo, 'text-white': !showInfo}" @click.stop="toggleInfo"><Info class="w-6 h-6"/></button>
@@ -315,49 +338,48 @@ export default {
                              style="aspect-ratio: var(--ratio)"
                         />
 
-                        <Transition enter-active-class="transition-opacity duration-300 ease-in"
-                                    leave-active-class="transition-opacity duration-300 ease-in" enter-from-class="opacity-0"
-                                    enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
+                        <Fade>
                             <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
                                 <div class="flex-1 flex flex-col">
-                                    <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
-                                    <p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base">{{selectedImage.description}}</p>
+                                    <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
+                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base">{{selectedImage.description}}</p></Fade>
                                 </div>
 
-                                <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs xl:text-sm border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
-                                    <template v-for="(label, key) in selectedImage.exif">
-                                        <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
-                                        <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
-                                        <li v-else>{{key}}: {{label}}</li>
-                                    </template>
-
-                                </ul>
+                                <Fade>
+                                    <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs xl:text-sm border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
+                                        <template v-for="(label, key) in selectedImage.exif">
+                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else>{{key}}: {{label}}</li>
+                                        </template>
+                                    </ul>
+                                </Fade>
                             </div>
-                        </Transition>
-                        <Transition enter-active-class="transition-opacity duration-300 ease-in"
-                                    leave-active-class="transition-opacity duration-300 ease-in" enter-from-class="opacity-0"
-                                    enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
+                        </Fade>
+                        <Fade>
                             <div ref="infoMobile" v-show="showTitle || showInfo" class="sm:hidden bg-black/90 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
                                 <div class="flex-1 flex flex-col">
-                                    <h2 v-if="showTitle && selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm">{{selectedImage.title}}</h2>
-                                    <p v-if="showInfo" class="flex-1 px-2 w-full text-xs">{{selectedImage.description}}</p>
+                                    <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm">{{selectedImage.title}}</h2>
+                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-xs">{{selectedImage.description}}</p></Fade>
                                 </div>
 
-                                <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
-                                    <template v-for="(label, key) in selectedImage.exif">
-                                        <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
-                                        <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
-                                        <li v-else>{{key}}: {{label}}</li>
-                                    </template>
-                                </ul>
+                                <Fade>
+                                    <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
+                                        <template v-for="(label, key) in selectedImage.exif">
+                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else>{{key}}: {{label}}</li>
+                                        </template>
+                                    </ul>
+                                </Fade>
                             </div>
-                        </Transition>
+                        </Fade>
                     </div>
                     <div class="w-[33px] mx-4 max-4 fixed md:static right-1 sm:right-0 my-auto hover:text-orange-400 hover:translate-x-1 transition duration-300 z-30  text-white text-4xl">
                         <button @click.stop="selectNextImage" v-show="nextImage">&rarr;</button>
                     </div>
                 </div>
-            </Transition>
+            </Fade>
         </Teleport>
     </div>
 </template>
