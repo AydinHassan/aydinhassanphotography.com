@@ -147,9 +147,15 @@ export default {
         randomIntBetween: (min, max) => Math.floor(Math.random() * (max - min + 1) + min),
         photoSource(img) {
             if (img.orientation === 'landscape') {
-                return '/photos/' + img.src + '?nf_resize=fit&w=1000';
+                return '/photos/' + img.src + '?nf_resize=fit&w=750';
             }
-            return '/photos/' + img.src + '?nf_resize=fit&h=500';
+            return '/photos/' + img.src + '?nf_resize=fit&h=350';
+        },
+        photoSourceMain(img) {
+            if (img.orientation === 'landscape') {
+                return '/photos/' + img.src + '?nf_resize=fit&w=1500';
+            }
+            return '/photos/' + img.src + '?nf_resize=fit&h=1000';
         },
         selectImage(img, index) {
             this.selectedImageIndex = index;
@@ -337,7 +343,7 @@ export default {
                     <div ref="imgContainer" class="flex-1 inline-flex justify-center items-center w-full h-full relative p-3 sm:p-0 flex flex-col">
 
                         <img ref="img" loading="lazy" class="border-4 border-white max-h-full w-auto"
-                             :src="/photos/ + selectedImage.src"
+                             :src="photoSourceMain(selectedImage)"
                              :alt="selectedImage.title"
                              :style="imgStyles"
                              style="aspect-ratio: var(--ratio)"
