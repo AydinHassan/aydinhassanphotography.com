@@ -337,7 +337,7 @@ export default {
                     <div ref="imgContainer" class="flex-1 inline-flex justify-center items-center w-full h-full relative p-3 sm:p-0 flex flex-col">
 
                         <img ref="img" loading="lazy" class="border-4 border-white max-h-full w-auto"
-                             :src="photoSource(selectedImage.src)"
+                             :src="/photos/ + selectedImage.src"
                              :alt="selectedImage.title"
                              :style="imgStyles"
                              style="aspect-ratio: var(--ratio)"
