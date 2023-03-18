@@ -25,7 +25,7 @@ export default {
                             <h3 class="text-center text-2xl text-white font-bungee-hairline p-3 group-hover:text-orange-300"><router-link :to="{ name: 'album', params: {'id' : albumId}}">{{ album.title }}</router-link></h3>
                         </div>
                         <router-link :to="{ name: 'album', params: {'id' : albumId}}">
-                            <img :src="photoSource(album.cover)" :alt="album.title" class="aspect-square object-cover opacity-1 transition-opacity duration-200 ease-in group-hover:opacity-60">
+                            <img loading="lazy" :src="photoSource(album.cover)" :alt="album.title" class="aspect-square object-cover opacity-1 transition-opacity duration-200 ease-in group-hover:opacity-60">
                         </router-link>
                     </div>
                 </template>

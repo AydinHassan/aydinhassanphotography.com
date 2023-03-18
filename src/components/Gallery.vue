@@ -342,7 +342,7 @@ export default {
                     </div>
                     <div ref="imgContainer" class="flex-1 inline-flex justify-center items-center w-full h-full relative p-3 sm:p-0 flex flex-col">
 
-                        <img ref="img" loading="lazy" class="border-4 border-white max-h-full w-auto"
+                        <img ref="img" loading="lazy" class="border-4 border-white max-h-full w-auto bg-black"
                              :src="photoSourceMain(selectedImage)"
                              :alt="selectedImage.title"
                              :style="imgStyles"
