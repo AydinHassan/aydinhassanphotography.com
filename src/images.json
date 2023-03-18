@@ -3,40 +3,59 @@
         "fog": {
             "title": "Ethereal fog",
             "cover": "albums\/foggy-trees-slovenia.jpg",
-            "description": "Fog is a favorite subject of mine, it creates mood and separation. It helps to isolate subjects and adds depth to a scene with mystery and eeriness. Combined with light, opposing emotions can be elevated, harmony and wonder prevail."
+            "description": "Fog is one of my favourite subjects, it portrays mood and creates separation. It conveys mystery with an eerie atmosphere, but combined with light, opposing emotions are experienced, elation, harmony and wonder prevail."
         },
         "weather": {
             "title": "Ferocious weather",
-            "cover": "albums\/karawanken-foggy-sunset.jpg"
+            "cover": "albums\/karawanken-foggy-sunset.jpg",
+            "description": "Weather is a key element in my photography, often times bad weather is the secret ingredient for impactful images. In the right environment, the weather can elevate a scene to untold levels of beauty. Storms, fog, snow, rain, ice, extreme heat & wind all have their own unique characteristics that can transform a photograph."
         },
         "winter": {
             "title": "Winter Dreams",
-            "cover": "albums\/dobratsch-winter-sunset.jpg"
+            "cover": "albums\/dobratsch-winter-sunset.jpg",
+            "description": "Winter is my favourite season, at least when there is an abundance of snow. I'm not particularly well trained or equipped for it but I try not to let that get in my way. I love the simplicity, the softness, the shapes and patterns and not to mention it's the easiest time of the year to get up early since the days are so much shorter!"
         },
         "villages": {
             "title": "Enchanting villages",
-            "cover": "albums\/sorg-pastel-fog-sunrise.jpg"
+            "cover": "albums\/sorg-pastel-fog-sunrise.jpg",
+            "description": "I adore the charm of an old medieval village, the cobbled streets, wonky buildings and romantic views. Coupled with a remote location and the right weather and light, it's a recipe for a great photograph to inspire wonder and adventure."
         },
         "castles": {
             "title": "Magnificent Castles",
-            "cover": "albums\/liebenfels-castle-sunset.jpg"
+            "cover": "albums\/liebenfels-castle-sunset.jpg",
+            "description": "Castles and mountains, what's not to love? I relish in exploring the landscape looking for unique angles and perspectives to capture the majesty of these imposing structures. I often have plans for shots that may not come to fruition for years, until the correct conditions present themselves."
         },
         "architecture": {
             "cover": "albums\/kazakhstan-graveyard.jpg",
-            "title": "World Architecture"
+            "title": "World Architecture",
+            "description": "Architecture is a subject that strikes and inspires me, its very essence is a reflection of culture and history and imagination. It can be daring, political, functional, useless, bold and beautiful. Through architecture we can learn and begin to understand a place and its people."
         },
         "autumn": {
             "cover": "albums\/kalkalpen-sunset.jpg",
-            "title": "Autumnal tones"
+            "title": "Autumnal tones",
+            "description": "Autumn is the season of transitions, especially in the mountains. The monotony of summer explodes into a thousand shades of colour. The rains and fog bring interesting elements to the landscape and as the sun rises and sets, it too paints the sky with a myriad of colours."
         },
         "churches": {
             "cover": "albums\/stein-sunrise.jpg",
-            "title": "Churches & Landscapes"
+            "title": "Churches & Landscapes",
+            "description": "Churches are a common theme in my photography. The stubbornness and determination of the people who sought to construct them, oftentimes in the most remote and inhospitable environments is fascinating and inspiring. They complement the landscape and embody a deep connection to it."
+        },
+        "abstract": {
+            "cover": "dobratsch-abstract.jpg",
+            "title": "Abstract Landscapes",
+            "description": "Abstract landscapes are a way for me to see the landscape through a different perspective and encourage creativity. In that sense abstract means to me isolating elements such as colour, light, lines and textures and focusing on details that may otherwise go unnoticed."
         },
         "kyrgyzstan": {
             "cover": "albums\/skazka-canyon-issyk-kul-sunset.jpg",
-            "title": "Scenes from Kyrgyzstan "
+            "title": "Scenes from Kyrgyzstan",
+            "description": "A country I longed to visit for many years, Kyrgyzstan is a place of incredulous wonder. With diverse and barely discovered landscapes, it's a place of extremes and it requires rigor and determination to explore, but rewards are bountiful. I hope to return again soon."
+        },
+        "pink": {
+            "disabled": true
         }
+    },
+    "countries": {
+
     },
     "images": [
         {
@@ -70,7 +89,8 @@
             "albums": [
                 "fog",
                 "churches",
-                "weather"
+                "weather",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -90,7 +110,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "weather"
+                "weather",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -262,6 +283,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "pink"
+            ],
             "exif": {
                 "Aperture": "f\/5.0",
                 "Exposure": "1\/250",
@@ -337,6 +361,7 @@
             "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
+            "albums": ["abstract"],
             "exif": {
                 "Aperture": "f\/5.6",
                 "Exposure": "1\/100",
@@ -454,6 +479,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "pink"
+            ],
             "exif": {
                 "Aperture": "f\/11.0",
                 "Exposure": "1\/6",
@@ -915,7 +943,8 @@
             "orientation": "portrait",
             "disabled": false,
             "albums": [
-                "winter"
+                "winter",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/10.0",
@@ -956,7 +985,8 @@
             "disabled": false,
             "albums": [
                 "weather",
-                "winter"
+                "winter",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -1016,7 +1046,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "fog"
+                "fog",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/9.0",
@@ -1187,7 +1218,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "winter"
+                "winter",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/10.0",
@@ -1474,6 +1506,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "abstract"
+            ],
             "exif": {
                 "Aperture": "f\/5.6",
                 "Exposure": "1\/15",
@@ -1553,6 +1588,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "abstract"
+            ],
             "exif": {
                 "Aperture": "f\/9.0",
                 "Exposure": "1\/60",
@@ -2155,7 +2193,8 @@
             "disabled": false,
             "albums": [
                 "castles",
-                "winter"
+                "winter",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -2434,6 +2473,9 @@
             "description": "A Colour sunrise over the mountains and hills surrounding Schneeberg with thick fog in the distant planes.",
             "ratio": "3 \/ 2",
             "orientation": "landscape",
+            "albums": [
+                "pink"
+            ],
             "disabled": false,
             "exif": {
                 "Aperture": "f\/7.1",
@@ -2647,7 +2689,8 @@
             "disabled": false,
             "albums": [
                 "fog",
-                "winter"
+                "winter",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -2703,6 +2746,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "pink"
+            ],
             "exif": {
                 "Aperture": "f\/11.0",
                 "Exposure": "1\/5",
@@ -2971,7 +3017,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "villages"
+                "villages",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/8.0",
@@ -3232,7 +3279,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "kyrgyzstan"
+                "kyrgyzstan",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/7.1",
@@ -3272,7 +3320,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "fog"
+                "fog",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/7.1",
@@ -3332,6 +3381,9 @@
             "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
+            "albums": [
+                "abstract"
+            ],
             "exif": {
                 "Aperture": "f\/8.0",
                 "Exposure": "1\/200",
@@ -3370,6 +3422,10 @@
             "ratio": "2 \/ 3",
             "orientation": "portrait",
             "disabled": false,
+            "albums": [
+                "abstract",
+                "pink"
+            ],
             "exif": {
                 "Aperture": "f\/5.0",
                 "Exposure": "1\/200",
@@ -3580,6 +3636,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "pink"
+            ],
             "exif": {
                 "Aperture": "f\/7.1",
                 "Exposure": "1\/30",
@@ -3803,7 +3862,8 @@
             "orientation": "portrait",
             "disabled": false,
             "albums": [
-                "architecture"
+                "architecture",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/1.0",
@@ -4657,7 +4717,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "autumn"
+                "autumn",
+                "pink"
             ],
             "exif": {
                 "Aperture": "f\/10.0",
@@ -4962,6 +5023,9 @@
             "ratio": "3 \/ 2",
             "orientation": "landscape",
             "disabled": false,
+            "albums": [
+                "abstract"
+            ],
             "exif": {
                 "Aperture": "f\/7.1",
                 "Exposure": "1\/30",
@@ -5264,7 +5328,8 @@
             "orientation": "landscape",
             "disabled": false,
             "albums": [
-                "autumn"
+                "autumn",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/5.0",
@@ -5721,7 +5786,8 @@
             "disabled": false,
             "albums": [
                 "fog",
-                "weather"
+                "weather",
+                "abstract"
             ],
             "exif": {
                 "Aperture": "f\/6.3",
