@@ -173,9 +173,6 @@ export default {
             if ((index + 1) in this.images) {
                 this.nextImage = this.images[index + 1];
             }
-
-            //prefetch some images
-            this.prefetchImages([index - 1, index + 1, index + 2]);
         },
         prefetchImages(indexes) {
             indexes.forEach(index => {
@@ -325,6 +322,10 @@ export default {
         },
         selectedImageLoaded() {
             this.selectedImageLoading = false;
+
+            //prefetch some images
+            const index = this.selectedImageIndex;
+            this.prefetchImages([index - 1, index + 1, index + 2]);
 
             this.$nextTick(() => {
                  setTimeout(() => {
