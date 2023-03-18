@@ -153,7 +153,10 @@ export default {
             return '/photos/' + img.src + '?nf_resize=fit&h=500';
         },
         photoSourceMain(img) {
-            return '/photos/' + img.src;
+            if (img.orientation === 'landscape') {
+                return '/photos/' + img.src + '?nf_resize=fit&w=2000';
+            }
+            return '/photos/' + img.src + '?nf_resize=fit&h=1500';
         },
         selectImage(img, index) {
             this.showTitle = false;
@@ -311,12 +314,6 @@ export default {
             this.showInfo = false;
             this.showTitle = false;
         },
-        placeholderSrc(ratio) {
-            const [width, height] = this.calculatePlaceholderSize(ratio);
-
-            return `data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${width * 1000} ${height * 1000}"%3E%3C/svg%3E`;
-        },
-
         onElementObserved(entries) {
             entries.forEach(({ target, isIntersecting}) => {
                 if (isIntersecting) {
@@ -325,9 +322,6 @@ export default {
                     this.observer.unobserve(target);
                 }
             });
-        },
-        calculatePlaceholderSize(ratio) {
-            return ratio.split('/').map((n) => parseInt(n.trim()));
         },
         selectedImageLoaded() {
             this.selectedImageLoading = false;
