@@ -171,7 +171,19 @@ export default {
                 this.nextImage = this.images[index + 1];
             }
 
-            //TODO: prefetch previous and next image
+            //prefetch some images
+            this.prefetchImages([index - 1, index + 1, index + 2]);
+        },
+        prefetchImages(indexes) {
+            indexes.forEach(index => {
+                if (index in this.images) {
+                    this.prefetchImage(this.images[index]);
+                }
+            });
+        },
+        prefetchImage(image) {
+            const img = new Image();
+            img.src = this.photoSourceMain(image);
         },
         selectPreviousImage() {
             if (!this.selectedImage || !this.previousImage) {
