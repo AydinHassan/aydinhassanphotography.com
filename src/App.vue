@@ -53,7 +53,7 @@ export default {
 }
 </script>
 <template>
-    <div @scroll="handleScroll" ref="app" class="bg-stone-900 h-screen overflow-hidden overflow-y-auto flex flex-col">
+    <div @scroll="handleScroll" ref="app" class="bg-stone-900 h-full overflow-hidden overflow-y-auto flex flex-col">
         <header class="sticky top-0 left-0 z-30 w-full px-2 py-2 md:py-4 bg-stone-900 sm:px-4 shadow-xl">
             <div class="flex flex-col items-center">
                 <h1 class="text-white text-center text-md md:text-4xl p-4 font-bungee-hairline">Aydin Hassan Photography</h1>
