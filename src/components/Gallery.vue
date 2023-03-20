@@ -414,7 +414,7 @@ export default {
                             </div>
                         </Fade>
                         <Fade>
-                            <div ref="infoMobile" v-show="showTitle || showInfo" class=" bg-black/90 z-50 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
+                            <div ref="infoMobile" v-show="showTitle || showInfo" class="sm:hidden bg-black/90 z-50 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
                                 <div class="flex-1 flex flex-col">
                                     <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm text-white">{{selectedImage.title}}</h2>
                                     <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-xs text-white">{{selectedImage.description}}</p></Fade>
