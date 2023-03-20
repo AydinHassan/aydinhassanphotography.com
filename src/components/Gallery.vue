@@ -380,7 +380,7 @@ export default {
                     </div>
                     <div ref="imgContainer" class="flex-1 inline-flex justify-center items-center w-full h-full relative p-3 flex flex-col">
 
-                        <div :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black max-h-full max-w-auto" :class="{'h-full': selectedImageLoading}">
+                        <div :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black max-h-full max-w-auto">
                             <div v-show="selectedImageLoading" class="h-full flex justify-center items-center">
                                 <svg aria-hidden="true" class="inline w-16 h-16 text-gray-200 animate-spin fill-orange-400" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
@@ -398,15 +398,15 @@ export default {
                         <Fade>
                             <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 z-50 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
                                 <div class="flex-1 flex flex-col">
-                                    <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
-                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base">{{selectedImage.description}}</p></Fade>
+                                    <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base text-white">{{selectedImage.title}}</h2>
+                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base text-white">{{selectedImage.description}}</p></Fade>
                                 </div>
 
                                 <Fade>
                                     <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs xl:text-sm border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
                                         <template v-for="(label, key) in selectedImage.exif">
-                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
-                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end text-white"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end text-white"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
                                             <li v-else>{{key}}: {{label}}</li>
                                         </template>
                                     </ul>
@@ -414,17 +414,17 @@ export default {
                             </div>
                         </Fade>
                         <Fade>
-                            <div ref="infoMobile" v-show="showTitle || showInfo" class="sm:hidden bg-black/90 z-50 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
+                            <div ref="infoMobile" v-show="showTitle || showInfo" class=" bg-black/90 z-50 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
                                 <div class="flex-1 flex flex-col">
-                                    <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm">{{selectedImage.title}}</h2>
-                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-xs">{{selectedImage.description}}</p></Fade>
+                                    <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm text-white">{{selectedImage.title}}</h2>
+                                    <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-xs text-white">{{selectedImage.description}}</p></Fade>
                                 </div>
 
                                 <Fade>
                                     <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
                                         <template v-for="(label, key) in selectedImage.exif">
-                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
-                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-if="key === 'Date Taken'" class="flex items-center justify-end text-white"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
+                                            <li v-else-if="key === 'Model'" class="flex items-center justify-end text-white"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
                                             <li v-else>{{key}}: {{label}}</li>
                                         </template>
                                     </ul>
