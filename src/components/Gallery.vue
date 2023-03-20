@@ -375,7 +375,7 @@ export default {
                         </div>
 
                         <Fade>
-                            <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
+                            <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 z-50 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
                                 <div class="flex-1 flex flex-col">
                                     <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base">{{selectedImage.title}}</h2>
                                     <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base">{{selectedImage.description}}</p></Fade>
@@ -393,7 +393,7 @@ export default {
                             </div>
                         </Fade>
                         <Fade>
-                            <div ref="infoMobile" v-show="showTitle || showInfo" class="sm:hidden bg-black/90 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
+                            <div ref="infoMobile" v-show="showTitle || showInfo" class="sm:hidden bg-black/90 z-50 text-white font-bungee-hairline text-lg fixed sm:absolute bottom-0 left-0 w-full flex justify-between">
                                 <div class="flex-1 flex flex-col">
                                     <h2 v-if="selectedImage.title" :class="titleClasses" class="px-2 py-1 w-full text-sm">{{selectedImage.title}}</h2>
                                     <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-xs">{{selectedImage.description}}</p></Fade>
