@@ -16,7 +16,7 @@ export default{
 </script>
 
 <template>
-    <div ref="grid" class="wrapper flex-1 overflow-x-hidden overflow-y-hidden overflow-y-scroll " style="perspective: 10px">
+    <div ref="grid" class="flex-1 overflow-x-hidden overflow-y-hidden overflow-y-scroll " style="perspective: 10px">
         <div class="relative flex justify-center items-center h-full z-[-1]" style="transform-style: preserve-3d">
             <div class="container lg:w-3/4 m-1" style="transform: translateZ(-5px) scale(1.5)">
                 <h2 class=" text-white text-3xl sm:text-4xl md:text-6xl leading-normal md:leading-tight p-4 font-bungee-hairline font-bold bg-stone-900 inline box-decoration-clone">Travel &<br>Landscape<br>Photography</h2>
