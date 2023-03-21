@@ -372,7 +372,7 @@ export default {
         </div>
         <Teleport to="body">
             <Fade>
-                <div ref="imgOverlay" @mousemove="showTitleNow" @click="outsideImage" v-if="selectedImage" class="fixed inset-0 z-40 w-screen h-screen bg-black/80 flex justify-center items-center portrait:py-32 landscape:py-8 sm:py-20 md:py-12">
+                <div ref="imgOverlay" @mousemove="showTitleNow" @click="outsideImage" v-if="selectedImage" class="fixed inset-0 z-40 w-screen h-full bg-black/80 flex justify-center items-center portrait:py-32 landscape:py-8 sm:py-20 md:py-12">
                     <button class="fixed z-30 top-2 right-4 text-white text-4xl hover:text-orange-400 origin-bottom hover:-rotate-12 transition duration-500" @click.stop="closeImage">&times;</button>
                     <button class="fixed z-30 top-5 left-4 text-4xl hover:text-orange-400 origin-bottom transition duration-500" :class="{'text-orange-400': showInfo, 'text-white': !showInfo}" @click.stop="toggleInfo"><Info class="w-6 h-6"/></button>
                     <div class="w-[33px] mx-4 fixed md:static left-1 sm:left-0 my-auto hover:text-orange-400 hover:-translate-x-1 transition duration-300 z-30 text-white text-4xl">
