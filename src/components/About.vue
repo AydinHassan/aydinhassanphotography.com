@@ -30,13 +30,13 @@ export default{
                     <h1 class="text-white text-3xl font-bungee-hairline underline decoration-orange-300 decoration-1 underline-offset-4">Hey! I'm Aydin, a photographer, software engineer and avid traveller.</h1>
 
                     <div class="mt-6 space-y-7 text-base text-stone-400">
-                        <p>My love for the outdoors began at a young age, exploring the Great British outdoors with my family. Adventures, terrible weather and numerous disasters and close-calls.</p>
-                        <p>After working as a Chef for numerous years, then studying at University and graduating with a degree in Computer Science, I worked on eCommerce platforms and open source software, building up my skills. But something was missing.</p>
-                        <p>A desire to explore the world began to burn and so I embarked on an interrailing journey across Europe that would change my life forever. It was during this trip that I met my future wife, and together we set out on a life of adventure that we still pursue to this day. With it, my love for photography was born.</p>
+                        <p>My love for the outdoors began at a young age, exploring the Great British countryside with my family. Adventures, terrible weather, disasters and close-calls were the norm.</p>
+                        <p>After working as a Chef for numerous years, studying at University and graduating with a degree in Computer Science, I worked on eCommerce platforms and open source software, building up my technical engineering skills. But something was missing.</p>
+                        <p>A desire to explore the world began to burn and so I embarked on an interrailing journey across Europe that would change my life forever. It was during this time that I met my future wife, and together we set out on a life of adventure that we still pursue to this day. With it, my love for photography was born.</p>
                         <p>Many of my photographs were created during our travels, hitchhiking and camping through Europe to Morocco, multi-day long distance hikes, driving and car camping through Turkey, Georgia and Central Asia along the Silk Road.</p>
 
-                        <p>Despite working full-time as a Software Engineer, I always make time to pursue my love for exploring and capturing the beauty of Austria and beyond.</p>
-                        <p>I love waking up early in the mountains and witnessing first hand the magic of nature, I live to explore the unknown and push myself to the limits and share the beauty I've witnessed with the world. I've built this website from scratch to present my best work and to maybe inspire someone.</p>
+                        <p>Despite working full-time as a Software Engineer, I always make time to pursue my love for exploration and photographing the beauty of Austria and beyond.</p>
+                        <p>I love waking up early in the mountains and witnessing first hand the magic of nature, I live to explore the unknown and push myself to the limits and share the beauty I've witnessed with the world. I've built this website from scratch to present my best work and to maybe inspire a few others.</p>
 
                         <hr class="w-48 h-[1px] mx-auto my-4 bg-orange-300 border-0  md:my-10">
 
@@ -44,7 +44,7 @@ export default{
                         <ul class="list-disc list-inside">
                             <li>Download a few select images for free from <a class="text-orange-400 hover:underline" :href="links.unsplash">Unsplash.</a></li>
                             <li>Purchase from <a class="text-orange-400 hover:underline" :href="links.shutterstock">Shutterstock.</a></li>
-                            <li><a class="text-orange-400 hover:underline" :href="links.email">E-mail me.</a></li>
+                            <li><a class="text-orange-400 hover:underline" :href="links.email">E-mail me</a> to discuss.</li>
                         </ul>
 
                         <p>If you're interested in the adventures behind the photographs, you can explore mine and my wife's travel blog <a class="text-orange-400 hover:underline" :href="links.wildandwithout_blog">Wild & Without</a> and our <a class="text-orange-400 hover:underline" :href="links.wildandwithout_instagram">Instagram page.</a></p>
@@ -53,13 +53,13 @@ export default{
 
                         <hr class="w-48 h-[1px] mx-auto my-4 bg-orange-300 border-0  md:my-10">
 
-                        <p>For programming related tops, you can explore the following links:</p>
+                        <p>For programming related topics, you can explore the following links:</p>
                         <ul class="list-disc list-inside">
                             <li><a class="text-orange-400 hover:underline" :href="links.code_home">My portfolio website</a></li>
                             <li><a class="text-orange-400 hover:underline" :href="links.github">My GitHub</a></li>
                         </ul>
 
-                        <p>This website is designed and programmed by me from scratch, naturally it's also open source, you can find the source code <a href="https://github.com/AydinHassan/aydinhassanphotography.com">here.</a></p>
+                        <p>This website is designed and programmed by me from scratch, naturally it's also open source, you can find the source code <a class="text-orange-400 hover:underline" href="https://github.com/AydinHassan/aydinhassanphotography.com">here.</a></p>
                     </div>
                 </div>
             </div>
