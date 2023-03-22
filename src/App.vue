@@ -69,7 +69,7 @@ export default {
         <Transition enter-active-class="transition-opacity duration-500 ease-in"
                     leave-active-class="transition-opacity duration-500 ease-in" enter-from-class="opacity-0"
                     enter-to-class="opacity-100" leave-from-class="opacity-100" leave-to-class="opacity-0">
-            <div v-show="scrollY > 300" class="fixed right-4 bottom-5 flex justify-center items-center text-white hover:text-orange-300 hover:cursor-pointer hover:-translate-y-1 transition duration-300" @click="toTop">
+            <div v-show="scrollY > 300" class="fixed p-4 right-0 bottom-1 flex justify-center items-center text-white hover:text-orange-300 hover:cursor-pointer hover:-translate-y-1 transition duration-300" @click="toTop">
                 <up class="w-6 h-6"/>
             </div>
         </Transition>
