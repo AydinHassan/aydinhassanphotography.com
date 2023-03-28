@@ -44,8 +44,9 @@ export default {
     watch: {
         $route(to, from) {
             this.scrollY = 0;
+            const ignoreRoutes = ['homeGalleryImage', 'albumImage'];
 
-            if (from.name !== undefined) {
+            if (from.name !== undefined && ignoreRoutes.indexOf(from.name) === -1) {
                 this.getScrollElement().scrollTo({top: 0});
             }
         }
@@ -76,3 +77,8 @@ export default {
     </div>
 </template>
 
+<style>
+    .router-link-active {
+        @apply text-orange-200;
+    }
+</style>
