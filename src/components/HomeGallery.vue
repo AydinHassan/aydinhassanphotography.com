@@ -2,6 +2,7 @@
 import portfolio from  '../images.json';
 import Gallery from "./Gallery.vue";
 import config from '../config.js'
+import images from "../images.json";
 
 export default{
     components: {Gallery},
@@ -12,6 +13,18 @@ export default{
             bgSrc: '/photos/lake-tuz-mirror-sunset.jpg'
         }
     },
+    computed: {
+        galleryRoute() {
+            return {
+                name: 'homeGallery',
+            }
+        },
+        imageRoute() {
+            return {
+                name: 'homeGalleryImage',
+            }
+        },
+    }
 }
 </script>
 
@@ -33,7 +46,7 @@ export default{
         </div>
 
         <div class="bg-stone-900 w-full">
-            <Gallery :images="portfolio.images">
+            <Gallery :images="portfolio.images" :gallery-route="galleryRoute" :image-route="imageRoute" >
                 <template v-slot:title>
                     <h1 class="text-white text-center text-3xl p-4 font-bungee-hairline">Recent shoots</h1>
                 </template>

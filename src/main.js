@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 
 
 import HomeGallery from './components/HomeGallery.vue'
@@ -10,18 +10,29 @@ import Album from './components/Album.vue'
 import About from './components/About.vue'
 
 const routes = [
-    { path: '/', component: HomeGallery, name: 'home' },
+    { path: '/', component: HomeGallery, name: 'homeGallery', alias: '/gallery'},
+    {
+        path: '/gallery/i/:image',
+        component: HomeGallery,
+        name: 'homeGalleryImage',
+    },
     { path: '/albums', component: Albums, name: 'albums' },
-    { path: '/album/:id', component: Album, name: 'album' },
+    {
+        path: '/album/:id',
+        component: Album,
+        name: 'album',
+    },
+    {
+        path: '/album/:id/i/:image',
+        component: Album,
+        name: 'albumImage',
+    },
     { path: '/about', component: About, name: 'about' },
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes,
-    scrollBehavior(to, from, savedPosition) {
-        return { el: "#content", top: 0 }
-    },
 })
 
 const app = createApp(App);

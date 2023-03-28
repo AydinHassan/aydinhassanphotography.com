@@ -16,6 +16,22 @@ export default {
         }
     },
     computed: {
+        galleryRoute() {
+            return {
+                name: 'album',
+                params: {
+                    id: this.$route.params.id
+                }
+            }
+        },
+        imageRoute() {
+            return {
+                name: 'albumImage',
+                params: {
+                    id: this.$route.params.id,
+                }
+            }
+        },
         album() {
             return this.albums[this.$route.params.id]
         },
@@ -42,9 +58,7 @@ export default {
             </div>
             <p v-if="album.description" class="mx-4 text-white font-bungee-hairline text-sm sm:text-base" >{{album.description}}</p>
         </div>
-        <Gallery :images="albumImages">
-            <template v-slot:title>
-            </template>
+        <Gallery :images="albumImages" :gallery-route="galleryRoute" :image-route="imageRoute" >
         </Gallery>
         <div class="container lg:w-3/4 mx-auto flex flex-col mt-6 mb-10">
             <div class="flex items-center">

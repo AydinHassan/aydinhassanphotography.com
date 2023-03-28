@@ -15,8 +15,8 @@ export default {
 </script>
 
 <template>
-    <div  class="bg-stone-900 w-full flex-1 ">
-        <div  class="container lg:w-3/4 mx-auto justify-center flex-wrap overflow-hidden mb-10">
+    <div class="bg-stone-900 w-full flex-1 ">
+        <div class="container lg:w-3/4 mx-auto justify-center flex-wrap overflow-hidden mb-10">
             <h1 class="text-white text-center text-5xl p-4 font-bungee-hairline font-bold my-10">Albums</h1>
             <div class="grid grid-cols-2 md:grid-cols-3 auto-rows-fr gap-8  p-4">
                 <template v-for="(album, albumId) in albums">
