@@ -77,7 +77,7 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
     .router-link-active {
         @apply text-orange-200;
     }

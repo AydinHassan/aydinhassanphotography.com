@@ -1,7 +1,7 @@
-import { createApp } from 'vue'
+import { createApp, h } from 'vue'
 import './style.css'
 import App from './App.vue'
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, RouterView } from 'vue-router'
 
 
 import HomeGallery from './components/HomeGallery.vue'
@@ -16,16 +16,26 @@ const routes = [
         component: HomeGallery,
         name: 'homeGalleryImage',
     },
-    { path: '/albums', component: Albums, name: 'albums' },
     {
-        path: '/album/:id',
-        component: Album,
-        name: 'album',
-    },
-    {
-        path: '/album/:id/i/:image',
-        component: Album,
-        name: 'albumImage',
+        path: '/albums',
+        component: { render: () => h(RouterView) },
+        name: 'albums',
+        children: [
+            {
+                path: '',
+                component: Albums,
+            },
+            {
+                path: '/album/:id',
+                component: Album,
+                name: 'album',
+            },
+            {
+                path: '/album/:id/i/:image',
+                component: Album,
+                name: 'albumImage',
+            }
+        ]
     },
     { path: '/about', component: About, name: 'about' },
 ]
