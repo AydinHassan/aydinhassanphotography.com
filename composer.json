@@ -1,0 +1,5 @@
+{
+    "require": {
+        "srwiez/thumbhash": "^1.1"
+    }
+}

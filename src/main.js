@@ -19,11 +19,11 @@ const routes = [
     {
         path: '/albums',
         component: { render: () => h(RouterView) },
-        name: 'albums',
         children: [
             {
                 path: '',
                 component: Albums,
+                name: 'albums',
             },
             {
                 path: '/album/:id',

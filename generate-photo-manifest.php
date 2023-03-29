@@ -1,14 +1,20 @@
 <?php
 
+require_once __DIR__ . '/vendor/autoload.php';
+
+use Thumbhash\Thumbhash;
+use function Thumbhash\extract_size_and_pixels_with_imagick;
+
+
 $json = json_decode(file_get_contents(__DIR__ . '/src/images.json'), true);
 
 foreach ($json['images'] as $key => $image) {
-    if (!file_exists(__DIR__ . '/src/photos/' . $image['src'])) {
-        echo "File not found: /src/photos/{$image['src']}\n";
+    if (!file_exists(__DIR__ . '/photos/' . $image['src'])) {
+        echo "File not found: /photos/{$image['src']}\n";
         continue;
     }
 
-    $file = new SplFileInfo(__DIR__ . '/src/photos/' . $image['src']);
+    $file = new SplFileInfo(__DIR__ . '/photos/' . $image['src']);
 
     [$width, $height] = getimagesize($file->getPathname());
 
@@ -24,6 +30,39 @@ foreach ($json['images'] as $key => $image) {
     $json['images'][$key]['ratio'] = getRatio($file);
     $json['images'][$key]['orientation'] = $width > $height ? 'landscape' : 'portrait';
     $json['images'][$key]['exif'] = exif($file);
+
+    $json['images'][$key]['hash'] = getImageHash($file);
+}
+
+function getImageHash(SplFileInfo $file): string
+{
+    $thumbContent = create_thumbnail($file);
+
+    [$width, $height, $pixels] = extract_size_and_pixels_with_imagick($thumbContent);
+
+    $hash = Thumbhash::RGBAToHash($width, $height, $pixels);
+    return implode(",", $hash);
+}
+
+function create_thumbnail(SplFileInfo $file): string
+{
+    $image = new Imagick($file->getPathname());
+
+    $width = $image->getImageWidth();
+    $height = $image->getImageHeight();
+
+    $longSide = max($width, $height);
+
+    if ($longSide == $width) {
+        $newWidth = 99;
+        $newHeight = 0;
+    } else {
+        $newHeight = 99;
+        $newWidth = 0;
+    }
+
+    $image->scaleImage($newWidth, $newHeight);
+    return $image->__toString();
 }
 
 function getRatio($file): string
