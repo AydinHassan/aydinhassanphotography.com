@@ -6,6 +6,7 @@ import Date from "./icons/Date.vue";
 import debounce from "../utils/debounce.js";
 import Fade from "./Fade.vue";
 import Lightbox from "./Lightbox.vue";
+import { thumbHashToDataURL, thumbHashToApproximateAspectRatio } from "thumbhash";
 
 const scrollElementIntoView = (element) => {
     if (element) {
@@ -63,6 +64,19 @@ export default {
         for (let i = 0; i < this.$refs.rows.length; i++) {
             this.animateRowObserver.observe(this.$refs.rows[i]);
         }
+
+        this.loadThumbnailObserver = new IntersectionObserver(
+            this.loadThumbnail,
+            {
+                root: null,
+                threshold: 0,
+                rootMargin: '0px 0px -50px 0px'
+            }
+        );
+
+        for (let i = 0; i < this.imageElements.length; i++) {
+            this.loadThumbnailObserver.observe(this.imageElements[i]);
+        }
     },
     data() {
         return {
@@ -116,6 +130,9 @@ export default {
         },
     },
     methods: {
+        hashToDataURL(img) {
+            return thumbHashToDataURL(img.hash.split(','));
+        },
         randomIntBetween: (min, max) => Math.floor(Math.random() * (max - min + 1) + min),
         photoSource(img) {
             if (img.orientation === 'landscape') {
@@ -199,8 +216,22 @@ export default {
             entries.forEach(({ target, isIntersecting, intersectionRatio}) => {
                 if (isIntersecting) {
                     target.classList.add('transform-none', 'opacity-100');
-                    target.classList.remove('opacity-0');
+                    target.classList.remove('opacity-30');
                     this.animateRowObserver.unobserve(target);
+                }
+            });
+        },
+        loadThumbnail(entries) {
+            entries.forEach(({ target, isIntersecting, intersectionRatio}) => {
+                if (isIntersecting) {
+                    const img = new Image();
+                    img.src = target.dataset.src;
+                    img.onload = function() {
+                        target.src = target.dataset.src;
+                        target.classList.add('group-hover:opacity-60', 'group-hover:scale-[1.01]', 'group-hover:backdrop-blur-lg');
+                    }
+
+                    this.loadThumbnailObserver.unobserve(target);
                 }
             });
         },
@@ -211,10 +242,10 @@ export default {
 <template>
     <div class="container lg:w-3/4 mx-auto flex justify-center flex-wrap relative mb-10">
         <slot name="title"></slot>
-        <div ref="rows" v-for="row in rows" class="opacity-0 transition-[opacity,transform] translate-y-[50px] duration-1000 ease-in w-full flex flex-nowrap gap-4 m-2">
+        <div ref="rows" v-for="row in rows" class="opacity-30 transition-[opacity,transform] translate-y-[50px] duration-1000 ease-in w-full flex flex-nowrap gap-4 m-2">
             <template v-for="img in row">
-                <div @click="selectImage(img, img.index)" class=" w-full md:w-auto item relative group hover:cursor-pointer basis-0 grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
-                    <img :ref="(el) => (imageElements[img.index] = el)" class="w-full h-auto block transition-scale  duration-300 ease-in opacity-1 group-hover:scale-[1.01] group-hover:opacity-60" loading="lazy" :src="photoSource(img)" :alt="img.title"/>
+                <div @click="selectImage(img, img.index)" class=" w-full md:w-auto item relative group  hover:cursor-pointer basis-0 grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
+                    <img :ref="(el) => (imageElements[img.index] = el)" :data-src="photoSource(img)" class="w-full h-auto block opacity-1 transition-all duration-300 ease-in aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'" :src="hashToDataURL(img)" :alt="img.title"/>
                     <p class="text-white font-bungee-hairline font-bold text-stone-100 text-center text-sm lg:text-base absolute hidden group-hover:flex left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">{{img.title}}</p>
                 </div>
             </template>
