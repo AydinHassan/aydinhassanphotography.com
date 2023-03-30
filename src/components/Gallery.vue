@@ -6,7 +6,7 @@ import Date from "./icons/Date.vue";
 import debounce from "../utils/debounce.js";
 import Fade from "./Fade.vue";
 import Lightbox from "./Lightbox.vue";
-import { thumbHashToDataURL, thumbHashToApproximateAspectRatio } from "thumbhash";
+import Thumbnail from "./Thumbnail.vue";
 
 const scrollElementIntoView = (element) => {
     if (element) {
@@ -19,6 +19,7 @@ const scrollElementIntoView = (element) => {
 
 export default {
     components: {
+        Thumbnail,
         Lightbox,
         Fade,
         Date,
@@ -74,8 +75,8 @@ export default {
             }
         );
 
-        for (let i = 0; i < this.imageElements.length; i++) {
-            this.loadThumbnailObserver.observe(this.imageElements[i]);
+        for (let i = 0; i < this.thumbnails.length; i++) {
+            this.loadThumbnailObserver.observe(this.thumbnails[i].$el);
         }
     },
     data() {
@@ -84,7 +85,7 @@ export default {
             selectedImage: null,
             previousImage: null,
             nextImage: null,
-            imageElements: [],
+            thumbnails: [],
         }
     },
     computed: {
@@ -130,9 +131,6 @@ export default {
         },
     },
     methods: {
-        hashToDataURL(img) {
-            return thumbHashToDataURL(img.hash.split(','));
-        },
         randomIntBetween: (min, max) => Math.floor(Math.random() * (max - min + 1) + min),
         photoSource(img) {
             if (img.orientation === 'landscape') {
@@ -203,7 +201,7 @@ export default {
             this.previousImage = null;
             this.nextImage = null;
 
-            const img = this.imageElements[image.index];
+            const img = this.thumbnails[image.index].$el;
 
             this.$router.push(this.galleryRoute);
 
@@ -229,12 +227,9 @@ export default {
         loadThumbnail(entries) {
             entries.forEach(({ target, isIntersecting, intersectionRatio}) => {
                 if (isIntersecting) {
-                    const img = new Image();
-                    img.src = target.dataset.src;
-                    img.onload = function() {
-                        target.src = target.dataset.src;
-                        target.classList.add('group-hover:opacity-60', 'group-hover:scale-[1.01]', 'group-hover:backdrop-blur-lg');
-                    }
+                    const id = target.dataset.id;
+                    const thumb = this.thumbnails[id];
+                    thumb.loadImage();
 
                     this.loadThumbnailObserver.unobserve(target);
                 }
@@ -249,10 +244,7 @@ export default {
         <slot name="title"></slot>
         <div ref="rows" v-for="row in rows" class="opacity-30 transition-[opacity,transform] translate-y-[50px] duration-1000 ease-in w-full flex flex-nowrap gap-4 m-2">
             <template v-for="img in row">
-                <div @click="selectImage(img, img.index)" class=" w-full md:w-auto item relative group  hover:cursor-pointer basis-0 grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
-                    <img :ref="(el) => (imageElements[img.index] = el)" :data-src="photoSource(img)" class="w-full h-auto block opacity-1 transition-all duration-300 ease-in aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'" :src="hashToDataURL(img)" :alt="img.title"/>
-                    <p class="text-white font-bungee-hairline font-bold text-stone-100 text-center text-sm lg:text-base absolute hidden group-hover:flex left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">{{img.title}}</p>
-                </div>
+                <Thumbnail :ref="(el) => (thumbnails[img.index] = el)" :data-id="img.index" @clickImage="selectImage(img, img.index)" :src="photoSource(img)" :img="img"></Thumbnail>
             </template>
         </div>
         <Teleport to="body">
