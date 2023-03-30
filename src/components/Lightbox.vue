@@ -68,16 +68,12 @@ export default {
             showTitle: false,
             showTitleTimer: null,
             showInfo: false,
-            imgInfoStyles: {},
             imgSrc: thumbHashToDataURL(this.image.hash.split(','))
         }
     },
     watch: {
         image: {
             handler(newImage) {
-                this.showTitle = false;
-                this.showInfo = false
-                this.imgInfoStyles = {};
                 this.imgSrc = thumbHashToDataURL(newImage.hash.split(','));
                 this.resetLoadingState();
             },
@@ -239,18 +235,6 @@ export default {
             });
         },
         calculateAndShowTitle() {
-            const img = this.$refs.img;
-            const container = this.$refs.imgContainer;
-
-            const rect = img.getBoundingClientRect();
-            const containerRect = container.getBoundingClientRect();
-
-            this.imgInfoStyles = {
-                bottom: containerRect.bottom - rect.bottom + 'px',
-                left: rect.left,
-                width: rect.width + 'px',
-            }
-
             this.showTitle = true;
 
             if (!this.showInfo) {
@@ -302,32 +286,31 @@ export default {
             <div ref="imgParent" :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black/80 max-h-full max-w-auto flex flex-col transition-transform transform duration-300 ease-in-out">
                 <img ref="img"
                      style="aspect-ratio: var(--ratio)"
-                     class="h-full"
-                     :class="['loadingThumbnail', 'loadingHash'].includes(this.loadingState) ? 'w-[3000px] object-cover' : ''"
-                     @load="imageLoaded"
+                     class="h-full w-full" :class="['loadingThumbnail', 'loadingHash'].includes(this.loadingState) ? 'w-[3000px] object-cover' : 'w-full'" @load="imageLoaded"
                      :src="imgSrc"
                      :alt="image.title"
                 />
+                <Fade>
+                    <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 z-50 text-white font-bungee-hairline text-lg absolute justify-between bottom-0 w-full">
+                        <div class="flex-1 flex flex-col">
+                            <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base text-white">{{image.title}}</h2>
+                            <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base text-white">{{image.description}}</p></Fade>
+                        </div>
+
+                        <Fade>
+                            <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs xl:text-sm border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
+                                <template v-for="(label, key) in image.exif">
+                                    <li v-if="key === 'Date Taken'" class="flex items-center justify-end text-white"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
+                                    <li v-else-if="key === 'Model'" class="flex items-center justify-end text-white"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
+                                    <li v-else>{{key}}: {{label}}</li>
+                                </template>
+                            </ul>
+                        </Fade>
+                    </div>
+                </Fade>
             </div>
 
-            <Fade>
-                <div ref="info" v-show="showTitle || showInfo" class="hidden sm:flex bg-black/70 z-50 text-white font-bungee-hairline text-lg absolute justify-between" :style="imgInfoStyles">
-                    <div class="flex-1 flex flex-col">
-                        <h2 :class="titleClasses" class="px-2 py-1 w-full text-sm xl:text-base text-white">{{image.title}}</h2>
-                        <Fade><p v-if="showInfo" class="flex-1 px-2 w-full text-sm xl:text-base text-white">{{image.description}}</p></Fade>
-                    </div>
 
-                    <Fade>
-                        <ul v-if="showInfo" class="pr-3 px-2 text-right text-xs xl:text-sm border-l border-orange-300/50 pl-2 sm:pl-6 my-2">
-                            <template v-for="(label, key) in image.exif">
-                                <li v-if="key === 'Date Taken'" class="flex items-center justify-end text-white"><Date class="w-3 h-3 mr-1"/> {{label}}</li>
-                                <li v-else-if="key === 'Model'" class="flex items-center justify-end text-white"><Camera class="w-3 h-3 mr-1"/> {{label}}</li>
-                                <li v-else>{{key}}: {{label}}</li>
-                            </template>
-                        </ul>
-                    </Fade>
-                </div>
-            </Fade>
             <Fade>
                 <div ref="infoMobile" class="flex sm:hidden bg-black z-[99] text-white font-bungee-hairline font-bold text-lg fixed p-1 bottom-0 left-0 w-full flex justify-between">
                     <div class="flex-1 flex flex-col">
