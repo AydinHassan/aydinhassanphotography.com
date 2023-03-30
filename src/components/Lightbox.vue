@@ -286,7 +286,8 @@ export default {
             <div ref="imgParent" :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black/80 max-h-full max-w-auto flex flex-col transition-transform transform duration-300 ease-in-out">
                 <img ref="img"
                      style="aspect-ratio: var(--ratio)"
-                     class="h-full w-full" :class="['loadingThumbnail', 'loadingHash'].includes(this.loadingState) ? 'w-[3000px] object-cover' : 'w-full'" @load="imageLoaded"
+                     class="h-full" :class="['loadingThumbnail', 'loadingHash', 'loadingMain'].includes(this.loadingState) ? 'w-[3000px] object-cover' : 'w-full'"
+                     @load="imageLoaded"
                      :src="imgSrc"
                      :alt="image.title"
                 />
