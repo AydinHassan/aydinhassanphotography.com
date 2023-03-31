@@ -151,6 +151,7 @@ export default {
             this.selectedImage = img;
 
             this.previousImage = null;
+
             if ((index + -1) in this.images) {
                 this.previousImage = this.images[index - 1];
             }
@@ -207,7 +208,7 @@ export default {
             scrollElementIntoView(img);
         },
         imageRouteChanged(imageName) {
-            const image = this.images.find(img => img.name === imageName);
+            const image = this.imagesWithIndexes.find(img => img.name === imageName);
             if (image) {
                 this.selectImage(image, image.index);
             }
