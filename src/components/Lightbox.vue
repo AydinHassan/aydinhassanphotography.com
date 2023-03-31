@@ -122,7 +122,8 @@ export default {
             }
 
             if (event.target !== this.$refs.img) {
-                this.closeImage()
+                this.closeImage();
+                return;
             }
 
             const boundingRect = this.$refs.imgContainer.getBoundingClientRect();
