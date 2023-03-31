@@ -34,7 +34,7 @@ export default {
             });
         },
         getScrollElement() {
-            if (this.$route.name === 'home') {
+            if (this.$route.name === 'homeGallery') {
                 return this.$refs.content.$el;
             }
 
