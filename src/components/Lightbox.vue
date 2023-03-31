@@ -43,6 +43,8 @@ export default {
 
         document.addEventListener('keyup', this.$el.keyUpEventHandler);
         window.addEventListener('resize', this.$el.resizeEventHandler);
+
+
     },
     unmounted() {
         document.removeEventListener('keyup', this.$el.keyUpEventHandler);
@@ -68,14 +70,16 @@ export default {
             showTitle: false,
             showTitleTimer: null,
             showInfo: false,
-            imgSrc: thumbHashToDataURL(this.image.hash.split(','))
+            imgSrc: thumbHashToDataURL(this.image.hash.split(',')),
+            imgDownloader: null,
         }
     },
     watch: {
         image: {
             handler(newImage) {
-                this.imgSrc = thumbHashToDataURL(newImage.hash.split(','));
+                this.cancelFetchImage();
                 this.resetLoadingState();
+                this.imgSrc = thumbHashToDataURL(newImage.hash.split(','));
             },
             immediate: true
         },
@@ -93,6 +97,59 @@ export default {
         },
     },
     methods: {
+        isImageCached(src) {
+            const img = new Image();
+            img.src = src;
+            const complete = img.complete;
+            img.src = "";
+            return complete;
+        },
+        imageLoaded() {
+            if (this.loadingState === 'loadingHash') {
+                //if we already have the cached large image, just use that
+                if (this.isImageCached(this.photoSourceMain(this.image))) {
+                    this.loadingState = 'loadingMain';
+                    this.fetchImage(this.photoSourceMain(this.image));
+                    return;
+                }
+
+                //otherwise download thumbnail first
+                this.loadingState = 'loadingThumbnail';
+                this.fetchImage(this.photoSource(this.image));
+                return;
+            }
+
+            if (this.loadingState === 'loadingThumbnail') {
+                this.loadingState = 'loadingMain';
+                this.fetchImage(this.photoSourceMain(this.image));
+                return;
+            }
+
+            if (this.loadingState === 'loadingMain') {
+                this.loadingState = 'loaded';
+            }
+
+            this.$emit('imageLoaded');
+
+            this.$nextTick(() => {
+                setTimeout(() => {
+                    this.calculateAndShowTitle();
+                }, 60);
+            });
+        },
+        fetchImage(src) {
+            this.imgDownloader = new Image();
+            this.imgDownloader.src = src;
+            this.imgDownloader.onload = () => {
+                this.imgSrc = src;
+            };
+        },
+        cancelFetchImage() {
+            if (this.imgDownloader !== null) {
+                this.imgDownloader.src = "";
+                this.imgDownloader.onload = null;
+            }
+        },
         resetLoadingState() {
             this.loadingState = 'loadingHash';
         },
@@ -204,35 +261,6 @@ export default {
 
                 }, 20);
             }, 300);
-        },
-        fetchImage(src) {
-            const img = new Image();
-            img.src = src;
-            img.onload = () => {
-                this.imgSrc = src;
-            };
-        },
-        imageLoaded() {
-            switch (this.loadingState) {
-                case 'loadingHash':
-                    this.loadingState = 'loadingThumbnail';
-                    this.fetchImage(this.photoSource(this.image));
-                    return;
-                case 'loadingThumbnail':
-                    this.loadingState = 'loadingMain';
-                    this.fetchImage(this.photoSourceMain(this.image))
-                    return;
-                case 'loadingMain':
-                    this.loadingState = 'loaded';
-            }
-
-            this.$emit('imageLoaded');
-
-            this.$nextTick(() => {
-                setTimeout(() => {
-                    this.calculateAndShowTitle();
-                }, 60);
-            });
         },
         calculateAndShowTitle() {
             this.showTitle = true;

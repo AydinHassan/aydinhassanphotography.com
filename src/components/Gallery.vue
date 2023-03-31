@@ -171,16 +171,19 @@ export default {
 
             this.$emit('imageSelected', img);
         },
-        prefetchImages(indexes) {
-            indexes.forEach(index => {
+        async prefetchImages(indexes) {
+            for (const index of indexes) {
                 if (index in this.images) {
-                    this.prefetchImage(this.images[index]);
+                    await this.prefetchImage(this.images[index]);
                 }
-            });
+            }
         },
-        prefetchImage(image) {
-            const img = new Image();
-            img.src = this.photoSourceMain(image);
+        async prefetchImage(image) {
+            return new Promise((resolve, reject) => {
+                const img = new Image();
+                img.src = this.photoSourceMain(image);
+                img.onload = () => resolve();
+            });
         },
         selectPreviousImage() {
             this.selectImage(this.previousImage, this.selectedImageIndex - 1);
@@ -191,7 +194,7 @@ export default {
         imageLoaded() {
             //prefetch some images
             const index = this.selectedImageIndex;
-            this.prefetchImages([index - 1, index + 1, index + 2]);
+            this.prefetchImages([index + 1, index + 2, index - 1]);
         },
         closeImage() {
             const image = this.selectedImage;
