@@ -8,6 +8,7 @@ import HomeGallery from './components/HomeGallery.vue'
 import Albums from './components/Albums.vue'
 import Album from './components/Album.vue'
 import About from './components/About.vue'
+import NotFound from './components/NotFound.vue'
 
 const routes = [
     { path: '/', component: HomeGallery, name: 'homeGallery', alias: '/gallery'},
@@ -38,6 +39,7 @@ const routes = [
         ]
     },
     { path: '/about', component: About, name: 'about' },
+    { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
 ]
 
 const router = createRouter({
