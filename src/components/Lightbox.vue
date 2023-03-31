@@ -154,8 +154,22 @@ export default {
             }
 
             this.cancelHideTitleTimer();
-            this.$emit('previousImage');
+            this.hideInfo();
+            this.$refs.imgParent.classList.add('translate-x-[calc(100vw)]');
 
+            setTimeout(() => {
+                this.$refs.imgParent.classList.remove('translate-x-[calc(100vw)]');
+                this.$refs.imgParent.classList.add('hidden', '-translate-x-[calc(100vw)]');
+                setTimeout(() => {
+                    this.$refs.imgParent.classList.remove('hidden');
+
+                    setTimeout(() => {
+                        this.$refs.imgParent.classList.remove('-translate-x-[calc(100vw)]');
+                        this.$emit('previousImage');
+                    }, 20);
+
+                }, 20);
+            }, 300);
         },
         selectNextImage() {
             if (!this.image || !this.nextImage) {
@@ -163,7 +177,23 @@ export default {
             }
 
             this.cancelHideTitleTimer();
-            this.$emit('nextImage');
+            this.hideInfo();
+
+            this.$refs.imgParent.classList.add('-translate-x-[calc(100vw)]');
+
+            setTimeout(() => {
+                this.$refs.imgParent.classList.remove('-translate-x-[calc(100vw)]');
+                this.$refs.imgParent.classList.add('hidden', 'translate-x-[calc(100vw)]');
+                setTimeout(() => {
+                    this.$refs.imgParent.classList.remove('hidden');
+
+                    setTimeout(() => {
+                        this.$refs.imgParent.classList.remove('translate-x-[calc(100vw)]');
+                        this.$emit('nextImage');
+                    }, 20);
+
+                }, 20);
+            }, 300);
         },
 
         imageLoaded() {
@@ -238,8 +268,7 @@ export default {
             <button @click.stop="selectPreviousImage" v-show="previousImage">&larr;</button>
         </div>
         <div ref="imgContainer" class="flex-1 inline-flex justify-center items-center w-full h-full relative p-3 flex flex-col">
-
-            <div :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black/80 max-h-full max-w-auto flex flex-col">
+            <div ref="imgParent" :style="imgStyles" style="aspect-ratio: var(--ratio)" class="border-4 border-white bg-black/80 max-h-full max-w-auto flex flex-col transition-transform transform duration-300 ease-in-out">
                 <div v-show="imageLoading" class="inline-flex h-full w-full justify-center items-center">
                     <svg aria-hidden="true" class="m-10 w-16 h-16 text-white animate-spin fill-orange-400" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
