@@ -27,14 +27,16 @@ const routes = [
                 name: 'albums',
             },
             {
-                path: '/album/:id',
+                path: '/album/:name',
                 component: Album,
                 name: 'album',
+                props: true,
             },
             {
-                path: '/album/:id/i/:image',
+                path: '/album/:name/i/:image',
                 component: Album,
                 name: 'albumImage',
+                props: true,
             }
         ]
     },
