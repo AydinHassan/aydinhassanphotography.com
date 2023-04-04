@@ -2,6 +2,7 @@
 import images from  '../images.json';
 import Gallery from "./Gallery.vue";
 import Back from "./icons/Back.vue";
+import { useHead } from '@unhead/vue';
 
 export default {
     name:  'Albums',
@@ -9,11 +10,34 @@ export default {
         Back,
         Gallery
     },
+    mounted() {
+        useHead({
+            title: this.album.title,
+        })
+    },
     data() {
         return {
             albums: images.albums,
             images: images.images
         }
+    },
+    methods: {
+        onImageSelected(image) {
+            useHead({
+                link: [{
+                    key: 'canonical',
+                    rel: 'canonical',
+                    href: window.location.origin + '/gallery/i/' + image.name,
+                }],
+            });
+        },
+        onImageClosed(image) {
+            useHead({
+                link: [{
+                    key: 'canonical',
+                }],
+            });
+        },
     },
     computed: {
         galleryRoute() {
@@ -58,7 +82,7 @@ export default {
             </div>
             <p v-if="album.description" class="mx-4 text-white font-bungee-hairline text-sm sm:text-base" >{{album.description}}</p>
         </div>
-        <Gallery :images="albumImages" :gallery-route="galleryRoute" :image-route="imageRoute" >
+        <Gallery @imageSelected="onImageSelected" @imageClosed="onImageClosed" :images="albumImages" :gallery-route="galleryRoute" :image-route="imageRoute" >
         </Gallery>
         <div class="container lg:w-3/4 mx-auto flex flex-col mt-6 mb-10">
             <div class="flex items-center">

@@ -1,8 +1,14 @@
 <script>
 import config from '../config.js'
+import {useHead} from "@unhead/vue";
 
 export default{
     components: {},
+    setup() {
+        useHead({
+            title: 'About',
+        })
+    },
     data() {
         return{
             links: config.links,

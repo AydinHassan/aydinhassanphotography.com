@@ -170,6 +170,8 @@ export default {
             route.params.image = img.name;
 
             this.$router.push(route);
+
+            this.$emit('imageSelected', img);
         },
         prefetchImages(indexes) {
             indexes.forEach(index => {
@@ -204,6 +206,8 @@ export default {
             const img = this.imageElements[image.index];
 
             this.$router.push(this.galleryRoute);
+
+            this.$emit('imageClosed', img);
 
             scrollElementIntoView(img);
         },
