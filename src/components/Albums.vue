@@ -28,9 +28,9 @@ export default {
                 <template v-for="(album, albumId) in albums">
                     <div v-if="album.disabled === undefined || !album.disabled"  class="flex flex-col items-center justify-end group hover:cursor-pointer ">
                         <div class="flex-grow flex items-center">
-                            <h3 class="text-center text-2xl text-white font-bungee-hairline p-3 group-hover:text-orange-300"><router-link :to="{ name: 'album', params: {'id' : albumId}}">{{ album.title }}</router-link></h3>
+                            <h3 class="text-center text-2xl text-white font-bungee-hairline p-3 group-hover:text-orange-300"><router-link :to="{ name: 'album', params: {'name' : albumId}}">{{ album.title }}</router-link></h3>
                         </div>
-                        <router-link :to="{ name: 'album', params: {'id' : albumId}}">
+                        <router-link :to="{ name: 'album', params: {'name' : albumId}}">
                             <img :src="photoSource(album.cover)" :alt="album.title" class="aspect-square object-cover opacity-1 transition-opacity duration-200 ease-in group-hover:opacity-60">
                         </router-link>
                     </div>

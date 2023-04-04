@@ -15,6 +15,12 @@ export default {
             title: this.album.title,
         })
     },
+    props: {
+        name: {
+            type: String,
+            required: true
+        }
+    },
     data() {
         return {
             albums: images.albums,
@@ -31,7 +37,7 @@ export default {
                 }],
             });
         },
-        onImageClosed(image) {
+        onImageClosed() {
             useHead({
                 link: [{
                     key: 'canonical',
@@ -44,7 +50,7 @@ export default {
             return {
                 name: 'album',
                 params: {
-                    id: this.$route.params.id
+                    name: this.name
                 }
             }
         },
@@ -52,15 +58,15 @@ export default {
             return {
                 name: 'albumImage',
                 params: {
-                    id: this.$route.params.id,
+                    name: this.name,
                 }
             }
         },
         album() {
-            return this.albums[this.$route.params.id]
+            return this.albums[this.name]
         },
         albumImages() {
-            return images.images.filter(image => image.albums !== undefined && image.albums.includes(this.$route.params.id));
+            return images.images.filter(image => image.albums !== undefined && image.albums.includes(this.name));
         },
     },
 }
