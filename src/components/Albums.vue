@@ -1,8 +1,14 @@
 <script>
 import images from  '../images.json';
+import { useHead } from '@unhead/vue'
 
 export default {
     name:  'Albums',
+    setup() {
+        useHead({
+            title: 'Albums',
+        })
+    },
     data() {
         return {
             albums: images.albums

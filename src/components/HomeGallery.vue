@@ -3,9 +3,15 @@ import portfolio from  '../images.json';
 import Gallery from "./Gallery.vue";
 import config from '../config.js'
 import images from "../images.json";
+import {useHead} from "@unhead/vue";
 
 export default{
     components: {Gallery},
+    setup() {
+        useHead({
+            title: 'Recent Shoots',
+        })
+    },
     data() {
         return{
             portfolio: portfolio,

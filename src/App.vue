@@ -1,9 +1,21 @@
 <script>
 import Up from "./components/icons/Up.vue";
+import { useHead } from '@unhead/vue'
 
 export default {
     components: {
         Up
+    },
+    setup() {
+        useHead({
+            titleTemplate: 'Aydin Hassan Photography | %s',
+            meta: [
+                { name: 'description', content: 'Travel & Landscape photography from Austria and around the world'},
+                { name: 'keywords', content: 'Photography, Landscape, Travel, Austria, World, Camping, Hiking, Mountains, Forest, Fog'},
+                { name: 'author', content: 'Aydin Hassan'},
+                { name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
+            ],
+        })
     },
     data() {
         return {
