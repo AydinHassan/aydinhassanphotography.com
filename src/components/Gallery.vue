@@ -3,7 +3,6 @@
 import Info from "./icons/Info.vue";
 import Camera from "./icons/Camera.vue";
 import Date from "./icons/Date.vue";
-import debounce from "../utils/debounce.js";
 import Fade from "./Fade.vue";
 import Lightbox from "./Lightbox.vue";
 import Thumbnail from "./Thumbnail.vue";
