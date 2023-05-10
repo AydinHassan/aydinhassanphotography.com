@@ -6,15 +6,15 @@ use Thumbhash\Thumbhash;
 use function Thumbhash\extract_size_and_pixels_with_imagick;
 
 
-$json = json_decode(file_get_contents(__DIR__ . '/src/images.json'), true);
+$json = json_decode(file_get_contents(__DIR__ . '/images.json'), true);
 
 foreach ($json['images'] as $key => $image) {
-    if (!file_exists(__DIR__ . '/photos/' . $image['src'])) {
-        echo "File not found: /photos/{$image['src']}\n";
+    if (!file_exists(__DIR__ . '/public/photos/' . $image['src'])) {
+        echo "File not found: /public/photos/{$image['src']}\n";
         continue;
     }
 
-    $file = new SplFileInfo(__DIR__ . '/photos/' . $image['src']);
+    $file = new SplFileInfo(__DIR__ . '/public/photos/' . $image['src']);
 
     [$width, $height] = getimagesize($file->getPathname());
 
@@ -32,6 +32,10 @@ foreach ($json['images'] as $key => $image) {
     $json['images'][$key]['exif'] = exif($file);
 
     $json['images'][$key]['hash'] = getImageHash($file);
+
+    if (!isset($image['albums'])) {
+        $json['images'][$key]['albums'] = [];
+    }
 }
 
 function getImageHash(SplFileInfo $file): string
@@ -118,4 +122,4 @@ function mapMake(?string $make): ?string {
     return $replaces[$make] ?? $make;
 }
 
-file_put_contents(__DIR__ . '/src/images.json', json_encode($json, JSON_PRETTY_PRINT));
+file_put_contents(__DIR__ . '/images.json', json_encode($json, JSON_PRETTY_PRINT));

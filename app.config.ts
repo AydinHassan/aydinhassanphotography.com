@@ -1,6 +1,7 @@
-export default {
+export default defineAppConfig({
     links: {
-        "github": "https://github.com/AydinHassan/aydinhassanphotography.com",
+        "github": "https://github.com/AydinHassan",
+        "github_photography": "https://github.com/AydinHassan/aydinhassanphotography.com",
         "twitter": "https://twitter.com/aydin_h",
         "unsplash": "https://unsplash.com/@aydinhassan",
         "email": "mailto:aydin@hotmail.co.uk",
@@ -10,4 +11,4 @@ export default {
         "wildandwithout_blog": "https://www.wildandwithout.com",
         "wildandwithout_instagram": "https://www.instagram.com/wildandwithout/",
     },
-}
+})
