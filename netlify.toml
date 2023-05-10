@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-  publish = ".output/dist"
+  publish = ".nuxt/dist"
 
   # Default build command.
-  command = "npx nuxi generate && cp -r photos .output/dist/photos"
+  command = "npx nuxi generate && cp -r photos .nuxt/dist/photos"
