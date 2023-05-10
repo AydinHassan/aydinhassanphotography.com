@@ -4,7 +4,7 @@
   status = 200
 
 [build]
-  publish = ".output/public"
+  publish = "dist"
 
   # Default build command.
-  command = "npm run generate && cp -r photos .output/public/photos"
+  command = "npm run generate && cp -r photos dist/photos"
