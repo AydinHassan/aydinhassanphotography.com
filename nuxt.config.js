@@ -33,4 +33,5 @@ export default defineNuxtConfig({
         display: 'swap',
         preload: true
     },
+    target: 'static'
 })
