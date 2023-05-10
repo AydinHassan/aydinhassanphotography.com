@@ -15,7 +15,7 @@ export default {
         }
     },
     methods: {
-        photoSource: name => '/photos/' + name + '?nf_resize=fit&w=500',
+        photoSource: name => '/public/photos/' + name + '?nf_resize=fit&w=500',
     },
 }
 </script>

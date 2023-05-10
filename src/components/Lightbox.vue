@@ -155,15 +155,15 @@ export default {
         },
         photoSource(img) {
             if (img.orientation === 'landscape') {
-                return '/photos/' + img.src + '?nf_resize=fit&w=1000';
+                return '/public/photos/' + img.src + '?nf_resize=fit&w=1000';
             }
-            return '/photos/' + img.src + '?nf_resize=fit&h=500';
+            return '/public/photos/' + img.src + '?nf_resize=fit&h=500';
         },
         photoSourceMain(img) {
             if (img.orientation === 'landscape') {
-                return '/photos/' + img.src + '?nf_resize=fit&w=2000';
+                return '/public/photos/' + img.src + '?nf_resize=fit&w=2000';
             }
-            return '/photos/' + img.src + '?nf_resize=fit&h=1500';
+            return '/public/photos/' + img.src + '?nf_resize=fit&h=1500';
         },
         showTitleNow() {
             debounce(() => {

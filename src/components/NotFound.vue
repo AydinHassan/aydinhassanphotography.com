@@ -10,7 +10,7 @@ export default {
     },
     data() {
         return{
-            bgSrc: '/photos/skazka-canyon.jpg'
+            bgSrc: '/public/photos/skazka-canyon.jpg'
         }
     },
 }
