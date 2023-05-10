@@ -8,3 +8,6 @@
 
   # Default build command.
   command = "npm run generate && cp -r photos dist/photos"
+
+[build.environment]
+NODE_VERSION = "18"
