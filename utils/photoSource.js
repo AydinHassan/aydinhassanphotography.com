@@ -13,5 +13,5 @@ export function photoSourceMain(img) {
 }
 
 export function photoSourceAlbum(name) {
-    return '/photos/' + name + '?nf_resize=fit&w=500';
+    return '/photos/' + name + '?nf_resize=fit&w=1000';
 }
