@@ -14,7 +14,9 @@ useHead({
     { name: 'og:url', content: 'https://www.aydinhassanphotography.com'}
   ],
   link: [
-    { rel: 'icon', type: 'image/svg+xml', href: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 100 100"><rect width="100" height="100" rx="50" fill="%23000000"></rect><path d="M31.10 77L23.00 77L23.00 32.75Q23.00 28.70 25.85 25.85Q28.70 23 32.75 23L32.75 23L67.18 23Q71.22 23 74.11 25.85Q77 28.70 77 32.75L77 32.75L77 77L68.83 77L68.83 58.10L31.10 58.10L31.10 77ZM31.10 33.88L31.10 50L68.83 50L68.83 33.88Q68.83 32.23 68.30 31.66Q67.78 31.10 66.05 31.10L66.05 31.10L33.88 31.10Q32.23 31.10 31.66 31.66Q31.10 32.23 31.10 33.88L31.10 33.88Z" fill="#f7b05e"></path></svg>'}
+    { rel: 'icon', sizes: 'any', href: 'favicon.ico'},
+    { rel: 'icon', type: 'image/svg+xml', href: 'favicon.svg'},
+    { rel: 'apple-touch-icon', sizes: '180x180', href: 'apple-touch-icon.png'}
   ],
   htmlAttrs: {
     class: 'h-full',
