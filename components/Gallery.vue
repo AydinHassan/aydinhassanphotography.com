@@ -1,5 +1,7 @@
 <script setup>
 
+import seedrandom from "seedrandom";
+
 const emit = defineEmits(['imageSelected', 'imageClosed'])
 
 const props = defineProps({
@@ -136,7 +138,7 @@ const scrollElementIntoView = (element) => {
     }
 }
 
-const rng = generateSeed()
+const rng = seedrandom(useRuntimeConfig().public.galleryOrderSeed);
 
 function randomIntBetween(min, max) {
     return min + Math.floor(rng() * (max - min + 1));
