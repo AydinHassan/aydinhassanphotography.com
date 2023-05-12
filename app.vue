@@ -11,7 +11,8 @@ useHead({
     { name: 'viewport', content: 'width=device-width, initial-scale=1.0'},
     { name: 'og:type', content: 'website'},
     { name: 'og:title', content: 'Travel & Landscape photography from Austria and around the world by Aydin Hassan'},
-    { name: 'og:url', content: 'https://www.aydinhassanphotography.com'}
+    { name: 'og:url', content: 'https://www.aydinhassanphotography.com'},
+    { name: 'og:image', content: '/img/social-share.png'}
   ],
   link: [
     { rel: 'icon', sizes: 'any', href: 'favicon.ico'},
