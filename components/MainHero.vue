@@ -16,6 +16,6 @@ const links = appConfig.links
             </div>
         </div>
 
-        <img class="absolute h-full w-full object-cover z-[-1]" src="/photos/lake-tuz-mirror-sunset.jpg" alt="A Ginormous salt lake reflecting like a mirror in Turkey at sunset" style="transform: translateZ(-20px) scale(3)"/>
+        <img class="absolute h-full w-full object-cover z-[-1]" src="/photos/lake-tuz-mirror-sunset.jpg?nf_resize=fit&w=2000" alt="A Ginormous salt lake reflecting like a mirror in Turkey at sunset" style="transform: translateZ(-20px) scale(3)"/>
     </div>
 </template>
