@@ -79,7 +79,7 @@ watch(
   <div class="h-full" >
     <div class="bg-stone-900 h-full overflow-hidden overflow-y-auto flex flex-col">
       <Header />
-      <div ref="content" @scroll="handleScroll" class="bg-stone-900 w-full flex-1 overflow-x-hidden overflow-y-hidden overflow-y-scroll scroll-smooth scrollbar-thin scrollbar-thumb-orange-400 scrollbar-track-none scrollbar-thumb-rounded-full" style="perspective: 10px">
+      <div ref="content" @scroll="handleScroll" class="bg-stone-900 w-full flex-1 overflow-x-hidden overflow-y-hidden overflow-y-scroll scroll-smooth scrollbar-thin scrollbar-thumb-orange-400 scrollbar-track-none scrollbar-thumb-rounded-full" style="perspective: 100px">
         <NuxtPage  />
       </div>
 
