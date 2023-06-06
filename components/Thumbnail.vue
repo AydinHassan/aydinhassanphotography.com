@@ -22,7 +22,7 @@ const classes = computed(() => {
         return ['opacity-0'];
     }
 
-    return ['group-hover:opacity-60', 'group-hover:scale-[1.01]', 'opacity-1'];
+    return ['group-hover:opacity-60', 'group-hover:scale-[1.02]', 'opacity-1'];
 });
 
 const hashClasses = computed(() => {
@@ -61,10 +61,10 @@ function click() {
 
 <template>
     <NuxtLink :to="'/image/' + img.name" :custom="true">
-        <a ref="element" :href="'/image/' + img.name" :data-id="img.index" @click.prevent="click" class="relative w-full md:w-auto item relative group hover:cursor-pointer basis-0 grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
+        <a ref="element" :href="'/image/' + img.name" :data-id="img.index" @click.prevent="click" class="relative w-full md:w-auto item overflow-hidden relative group hover:cursor-pointer basis-0 grow-[calc(var(--ratio))] aspect-[var(--ratio)]" :style="'--ratio: ' + img.ratio + ';'">
             <img :src="hashImage" class="w-full h-auto block aspect-[var(--ratio)] transition-opacity duration-1000 ease-in-out" :class="hashClasses" :style="'--ratio: ' + img.ratio + ';'" :alt="img.title" />
             <img :data-src="src"
-                 class="absolute left-0 top-0 w-full h-auto block aspect-[var(--ratio)] ease-in-out [transition:transform_300ms,opacity_1s]"
+                 class="absolute left-0 top-0 w-full h-auto block aspect-[var(--ratio)] ease-in-out [transition:transform_1s,opacity_1s]"
                  :class="classes"
                  :style="'--ratio: ' + img.ratio + ';'"
                  :src="loaded ? src : hashImage"
