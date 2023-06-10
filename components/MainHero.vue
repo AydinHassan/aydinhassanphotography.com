@@ -4,7 +4,7 @@ const appConfig = useAppConfig()
 const links = appConfig.links
 </script>
 <template>
-    <div class="relative flex justify-center items-center h-full" style="transform-style: preserve-3d; transform: translateZ(-100px) scale(1)">
+    <div class="relative flex justify-center items-center h-full z-[-1]" style="transform-style: preserve-3d; transform: translateZ(-100px) scale(1)">
         <div class="relative container lg:w-3/4 m-1" style="transform: translateZ(50px) scale(1.5)">
             <h2 class="text-white text-3xl sm:text-4xl md:text-6xl md:leading-tight sm:leading-tight leading-normal p-4 font-bungee-hairline font-bold bg-stone-900 inline box-decoration-clone">Travel &<br>Landscape<br>Photography</h2>
             <div class="flex mt-4 bg-stone-900 py-4 px-6 w-min z-[99]" >
